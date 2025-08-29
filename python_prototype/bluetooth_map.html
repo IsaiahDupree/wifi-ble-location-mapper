@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bluetooth Devices Around You - Location Visualizer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+        #map { height: 100vh; width: 100%; }
+        
+        .info-panel {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            max-width: 320px;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        
+        .info-panel h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 1.3em;
+        }
+        
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+            padding: 5px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .legend {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        
+        .legend h4 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+        
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 12px;
+            border: 2px solid white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+        
+        .controls {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        
+        .control-btn {
+            background: #9b59b6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        
+        .control-btn:hover {
+            background: #8e44ad;
+        }
+        
+        .device-type-filter {
+            position: fixed;
+            top: 120px;
+            left: 20px;
+            background: rgba(255,255,255,0.95);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            z-index: 1000;
+        }
+        
+        .filter-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        
+        .filter-checkbox {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    
+    <div class="controls">
+        <button class="control-btn" onclick="map.setView([40.7128, -74.0060], 15)">🎯 Center on You</button>
+        <button class="control-btn" onclick="toggleSignalRanges()">📡 Toggle Ranges</button>
+        <button class="control-btn" onclick="scanForDevices()">🔍 Scan Devices</button>
+    </div>
+    
+    <div class="device-type-filter">
+        <h4 style="margin-top: 0; font-size: 1em;">🔵 Device Filters</h4>
+        <div class="filter-item">
+            <input type="checkbox" class="filter-checkbox" id="filter-phone" checked>
+            <label for="filter-phone">📱 Phones</label>
+        </div>
+        <div class="filter-item">
+            <input type="checkbox" class="filter-checkbox" id="filter-headphones" checked>
+            <label for="filter-headphones">🎧 Audio</label>
+        </div>
+        <div class="filter-item">
+            <input type="checkbox" class="filter-checkbox" id="filter-computer" checked>
+            <label for="filter-computer">💻 Computers</label>
+        </div>
+        <div class="filter-item">
+            <input type="checkbox" class="filter-checkbox" id="filter-iot" checked>
+            <label for="filter-iot">🏠 IoT Devices</label>
+        </div>
+        <div class="filter-item">
+            <input type="checkbox" class="filter-checkbox" id="filter-unknown" checked>
+            <label for="filter-unknown">❓ Unknown</label>
+        </div>
+    </div>
+    
+    <div class="info-panel">
+        <h3>🔵 Bluetooth Detection</h3>
+        <div class="stat-item">
+            <span><strong>Devices Found:</strong></span>
+            <span id="deviceCount">15</span>
+        </div>
+        <div class="stat-item">
+            <span><strong>Your Location:</strong></span>
+            <span>Center</span>
+        </div>
+        <div class="stat-item">
+            <span><strong>BLE Devices:</strong></span>
+            <span id="bleCount">12</span>
+        </div>
+        <div class="stat-item">
+            <span><strong>Classic BT:</strong></span>
+            <span id="classicCount">3</span>
+        </div>
+        <div class="stat-item">
+            <span><strong>Scan Time:</strong></span>
+            <span id="scanTime">00:17</span>
+        </div>
+        <hr style="margin: 15px 0; border: none; border-top: 1px solid #ecf0f1;">
+        <p style="font-size: 0.9em; color: #7f8c8d; margin: 0;">
+            <em>Devices positioned by estimated location based on signal strength and device type</em>
+        </p>
+    </div>
+    
+    <div class="legend">
+        <h4>🔵 Bluetooth Legend</h4>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #e74c3c; width: 20px; height: 20px;"></div>
+            <span><strong>You (Detection Center)</strong></span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #2ecc71;"></div>
+            <span>Strong Signal (-30+ dBm)</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #f39c12;"></div>
+            <span>Medium Signal (-30 to -60 dBm)</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #95a5a6;"></div>
+            <span>Weak Signal (-60+ dBm)</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #3498db;"></div>
+            <span>📱 Phone/Mobile</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #9b59b6;"></div>
+            <span>🎧 Audio Device</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #e67e22;"></div>
+            <span>💻 Computer</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #1abc9c;"></div>
+            <span>🏠 IoT Device</span>
+        </div>
+    </div>
+
+    <script>
+        // Initialize map
+        var map = L.map('map').setView([40.7128, -74.0060], 15);
+        
+        // Add map tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors | Bluetooth Detection System'
+        }).addTo(map);
+        
+        // Your location marker (center)
+        var yourLocationIcon = L.divIcon({
+            className: 'your-location-marker',
+            html: `<div style="
+                background: #e74c3c; 
+                width: 24px; 
+                height: 24px; 
+                border-radius: 50%; 
+                border: 4px solid white; 
+                box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+                position: relative;
+            ">
+                <div style="
+                    position: absolute;
+                    top: -8px;
+                    left: -8px;
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid #e74c3c;
+                    border-radius: 50%;
+                    animation: pulse 2s infinite;
+                    opacity: 0.6;
+                "></div>
+            </div>
+            <style>
+                @keyframes pulse {
+                    0% { transform: scale(0.8); opacity: 0.8; }
+                    50% { transform: scale(1.2); opacity: 0.3; }
+                    100% { transform: scale(0.8); opacity: 0.8; }
+                }
+            </style>`,
+            iconSize: [24, 24],
+            iconAnchor: [12, 12]
+        });
+        
+        var yourLocation = L.marker([40.7128, -74.0060], {
+            icon: yourLocationIcon
+        }).addTo(map);
+        
+        yourLocation.bindPopup(`
+            <div style="text-align: center; min-width: 200px;">
+                <h4>📍 Your Location</h4>
+                <p><strong>Bluetooth Detection Center</strong></p>
+                <p>Lat: 40.712800<br>Lon: -74.006000</p>
+                <p style="color: #7f8c8d; font-size: 0.9em;">
+                    <em>All Bluetooth devices are positioned relative to this point</em>
+                </p>
+            </div>
+        `);
+        
+        // Sample Bluetooth devices (realistic for urban environment)
+        var bluetoothDevices = [
+            {name: "iPhone 14 Pro", rssi: -35, type: "BLE", device_type: "phone", address: "12:34:56:78:9A:BC", icon: "📱"},
+            {name: "AirPods Pro", rssi: -28, type: "BLE", device_type: "headphones", address: "AA:BB:CC:DD:EE:FF", icon: "🎧"},
+            {name: "Samsung Galaxy S23", rssi: -42, type: "BLE", device_type: "phone", address: "11:22:33:44:55:66", icon: "📱"},
+            {name: "MacBook Pro", rssi: -38, type: "Classic", device_type: "computer", address: "AA:11:BB:22:CC:33", icon: "💻"},
+            {name: "Sony WH-1000XM4", rssi: -45, type: "BLE", device_type: "headphones", address: "FF:EE:DD:CC:BB:AA", icon: "🎧"},
+            {name: "Apple Watch", rssi: -32, type: "BLE", device_type: "phone", address: "99:88:77:66:55:44", icon: "⌚"},
+            {name: "Tesla Model Y", rssi: -55, type: "BLE", device_type: "iot", address: "CA:R0:01:23:45:67", icon: "🚗"},
+            {name: "Fitbit Charge 5", rssi: -48, type: "BLE", device_type: "iot", address: "FI:TB:IT:12:34:56", icon: "⌚"},
+            {name: "JBL Speaker", rssi: -52, type: "Classic", device_type: "headphones", address: "JB:L0:SP:EA:KE:R1", icon: "🔊"},
+            {name: "iPad Air", rssi: -58, type: "BLE", device_type: "computer", address: "iP:AD:AI:R0:12:34", icon: "📱"},
+            {name: "Ring Doorbell", rssi: -65, type: "BLE", device_type: "iot", address: "RI:NG:DO:OR:BE:LL", icon: "🏠"},
+            {name: "Tile Tracker", rssi: -62, type: "BLE", device_type: "iot", address: "TI:LE:TR:AC:KE:R1", icon: "🏷️"},
+            {name: "Unknown Device", rssi: -68, type: "BLE", device_type: "unknown", address: "UN:KN:OW:N0:12:34", icon: "❓"},
+            {name: "Garmin Watch", rssi: -72, type: "BLE", device_type: "iot", address: "GA:RM:IN:WA:TC:H1", icon: "⌚"},
+            {name: "Nintendo Switch", rssi: -75, type: "Classic", device_type: "computer", address: "NI:NT:EN:DO:SW:IT", icon: "🎮"}
+        ];
+        
+        var deviceMarkers = [];
+        
+        function getDeviceColor(device) {
+            // Color by device type first, then by signal strength
+            switch(device.device_type) {
+                case 'phone': return '#3498db';
+                case 'headphones': return '#9b59b6';
+                case 'computer': return '#e67e22';
+                case 'iot': return '#1abc9c';
+                default: return '#95a5a6';
+            }
+        }
+        
+        function getSignalColor(rssi) {
+            if (rssi > -30) return '#2ecc71'; // Strong
+            if (rssi > -60) return '#f39c12'; // Medium
+            return '#95a5a6'; // Weak
+        }
+        
+        function addDeviceMarkers() {
+            // Clear existing markers
+            deviceMarkers.forEach(marker => map.removeLayer(marker));
+            deviceMarkers = [];
+            
+            bluetoothDevices.forEach(function(device, index) {
+                // Check if device type is filtered
+                var filterCheckbox = document.getElementById('filter-' + device.device_type);
+                if (filterCheckbox && !filterCheckbox.checked) {
+                    return;
+                }
+                
+                // Calculate position based on RSSI (Bluetooth typically closer range than WiFi)
+                var distance = Math.abs(device.rssi + 20) * 3; // Closer positioning for Bluetooth
+                
+                // Distribute devices around you
+                var angle = (index * (360 / bluetoothDevices.length)) * Math.PI / 180;
+                
+                // Add randomness for realistic positioning
+                var randomOffset = (Math.random() - 0.5) * 0.001;
+                var lat = 40.7128 + (distance / 111320) * Math.cos(angle) + randomOffset;
+                var lon = -74.0060 + (distance / (111320 * Math.cos(40.7128 * Math.PI / 180))) * Math.sin(angle) + randomOffset;
+                
+                var deviceColor = getDeviceColor(device);
+                
+                // Create device marker with device-specific icon
+                var deviceIcon = L.divIcon({
+                    className: 'bluetooth-device-marker',
+                    html: `<div style="
+                        background: ${deviceColor}; 
+                        width: 16px; 
+                        height: 16px; 
+                        border-radius: 50%; 
+                        border: 2px solid white; 
+                        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 8px;
+                    ">${device.icon}</div>`,
+                    iconSize: [16, 16],
+                    iconAnchor: [8, 8]
+                });
+                
+                var marker = L.marker([lat, lon], {
+                    icon: deviceIcon
+                }).addTo(map);
+                
+                deviceMarkers.push(marker);
+                
+                // Create popup
+                var signalIcon = device.rssi > -30 ? '🟢' : 
+                               device.rssi > -60 ? '🟡' : '🔴';
+                var typeIcon = device.type === 'BLE' ? '🔵' : '🟦';
+                
+                marker.bindPopup(`
+                    <div style="min-width: 280px;">
+                        <h4>${device.icon} ${device.name || 'Unknown Device'}</h4>
+                        <table style="width: 100%; font-size: 0.9em;">
+                            <tr><td><strong>Signal Strength:</strong></td><td>${signalIcon} ${device.rssi} dBm</td></tr>
+                            <tr><td><strong>Bluetooth Type:</strong></td><td>${typeIcon} ${device.type}</td></tr>
+                            <tr><td><strong>Device Category:</strong></td><td>${getDeviceTypeLabel(device.device_type)}</td></tr>
+                            <tr><td><strong>MAC Address:</strong></td><td style="font-family: monospace; font-size: 0.8em;">${device.address}</td></tr>
+                            <tr><td><strong>Est. Distance:</strong></td><td>${getEstimatedDistance(device.rssi)}m</td></tr>
+                        </table>
+                        <hr style="margin: 10px 0;">
+                        <p style="font-size: 0.8em; color: #7f8c8d; margin: 0;">
+                            <em>📡 Position estimated from Bluetooth signal analysis</em>
+                        </p>
+                    </div>
+                `);
+            });
+        }
+        
+        function getDeviceTypeLabel(type) {
+            switch(type) {
+                case 'phone': return '📱 Mobile Device';
+                case 'headphones': return '🎧 Audio Device';
+                case 'computer': return '💻 Computer';
+                case 'iot': return '🏠 IoT Device';
+                default: return '❓ Unknown Device';
+            }
+        }
+        
+        function getEstimatedDistance(rssi) {
+            // Rough distance estimation for Bluetooth
+            if (rssi > -30) return '1-5';
+            if (rssi > -45) return '5-15';
+            if (rssi > -60) return '15-30';
+            return '30+';
+        }
+        
+        // Signal range circles
+        var signalCircles = [];
+        var circlesVisible = false;
+        
+        function toggleSignalRanges() {
+            if (circlesVisible) {
+                signalCircles.forEach(circle => map.removeLayer(circle));
+                signalCircles = [];
+                circlesVisible = false;
+            } else {
+                var ranges = [5, 15, 30, 50, 100]; // Bluetooth ranges in meters
+                var colors = ['#e74c3c', '#f39c12', '#f1c40f', '#2ecc71', '#3498db'];
+                var labels = ['Personal Area', 'Close Range', 'Medium Range', 'Extended Range', 'Max Range'];
+                
+                ranges.forEach(function(radius, index) {
+                    var circle = L.circle([40.7128, -74.0060], {
+                        color: colors[index],
+                        fillColor: 'transparent',
+                        fillOpacity: 0,
+                        radius: radius,
+                        weight: 2,
+                        opacity: 0.7,
+                        dashArray: '6, 6'
+                    }).addTo(map);
+                    
+                    circle.bindPopup(`<strong>${labels[index]}</strong><br>${radius}m radius`);
+                    signalCircles.push(circle);
+                });
+                circlesVisible = true;
+            }
+        }
+        
+        function scanForDevices() {
+            // Simulate scanning animation
+            var scanBtn = document.querySelector('.control-btn:nth-child(3)');
+            var originalText = scanBtn.innerHTML;
+            scanBtn.innerHTML = '🔄 Scanning...';
+            scanBtn.disabled = true;
+            
+            setTimeout(() => {
+                // Add some randomness to device positions
+                bluetoothDevices.forEach(device => {
+                    device.rssi += Math.random() * 6 - 3; // ±3 dBm variation
+                });
+                
+                addDeviceMarkers();
+                updateStats();
+                
+                scanBtn.innerHTML = originalText;
+                scanBtn.disabled = false;
+            }, 2000);
+        }
+        
+        function updateStats() {
+            var visibleDevices = bluetoothDevices.filter(device => {
+                var filterCheckbox = document.getElementById('filter-' + device.device_type);
+                return !filterCheckbox || filterCheckbox.checked;
+            });
+            
+            document.getElementById('deviceCount').textContent = visibleDevices.length;
+            document.getElementById('bleCount').textContent = visibleDevices.filter(d => d.type === 'BLE').length;
+            document.getElementById('classicCount').textContent = visibleDevices.filter(d => d.type === 'Classic').length;
+            document.getElementById('scanTime').textContent = new Date().toLocaleTimeString().slice(0, 5);
+        }
+        
+        // Add filter event listeners
+        document.querySelectorAll('.filter-checkbox').forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                addDeviceMarkers();
+                updateStats();
+            });
+        });
+        
+        // Initialize
+        addDeviceMarkers();
+        updateStats();
+        
+        // Add scale control
+        L.control.scale({position: 'bottomright'}).addTo(map);
+    </script>
+</body>
+</html>

@@ -1,0 +1,1182 @@
+[
+  {
+    "ssid": "Welcome2ATL",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:45.511528",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Troy and Abed in the Modem",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:45.731193",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Haan-guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:45.887619",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "attinternet",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:46.049537",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "ATT4t2Bxn7",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:46.227757",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Lark Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:46.419836",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Error",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:46.624285",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Daily Grind",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:46.802976",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "iPhone",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:46.957846",
+    "authentication": "WPA3-Personal"
+  },
+  {
+    "ssid": "Cool Beans Coffee  5G 1",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:47.115593",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "MariettaPerks-Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:47.272753",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "_LinksysSetup159-guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:47.433974",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "SpectrumSetup-BD",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:47.596262",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "WPL-Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:47.748232",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Stone Cup WiFi",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:47.915224",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Meanmug Coffee",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:48.075153",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Oaks - Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:48.233350",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "ATTQKXQxne",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:48.400878",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "WhiteSky-PublicWiFi",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:48.585885",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "WLED-AP",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:48.732407",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "ATT8ePb7xg",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:48.894774",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "fossy",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:49.044303",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Plant",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:49.245573",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Livetothemaxx0076",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:49.413449",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Island",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:49.592807",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Bed",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:49.782636",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "ARRIS-B1CD",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:49.956595",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Lineage Coffee",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:50.141742",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "ATTu4KWQEm",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:50.326998",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Quality Inn",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:50.567521",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Hilton Honors",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:50.782334",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Subculture Coffee FREE WiFi",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:50.941748",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "SpectrumSetup-CF",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:51.099396",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "3D Printer",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:51.362711",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Panera",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:51.532870",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "TampaPrintWiFi",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:51.666910",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Moe's Guest WiFi",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:51.799982",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Avenue WiFi",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:51.938807",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Liteshow4",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:52.067992",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "BCCOFFEE",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:52.221913",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Foxtail Coffee Co",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:52.390720",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Happy wifi happy life",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:52.571884",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Blind Tiger Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:52.765613",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Starbucks",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:52.917361",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Armature_Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:53.108864",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Guest of Casa Paraiso",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:53.276386",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "DI Coffee Bar Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:53.433776",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "The Pour",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:53.608097",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "paceeamore",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:53.770645",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "dripcoffee",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:53.926200",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Emerald Airbnb",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:54.076810",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Joffreys_Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:54.235720",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Element",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:54.407507",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "MidtownTampa_Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:54.599786",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "WalkOnsTampa-Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:54.765236",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Starbucks-Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:54.945354",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "WholeFoodsMarket",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:55.089552",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Grind Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:55.248554",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Eero_Home",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:55.404704",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Foxtail Coffee Co",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:55.582622",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Axum Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:55.767320",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Starbucks WiFi",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:55.933334",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Disney-Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:56.094132",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "_iGuest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:56.256365",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Flag Coffee Corner - Latte",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:56.426622",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "MySpectrumWiFib4-5G",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:56.634776",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "MySpectrumWiFib4-2G",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:56.807478",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "suncreekwifi",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:56.997679",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "JMG Resident Wi-Fi",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:57.177133",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Spectrum Free Trial",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:57.334517",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "BNWiFi",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:57.489259",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "Cabin",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:57.665387",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Tyummi Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:57.824478",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Strange Wi-Fi",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:57.978379",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Copy Cow Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:58.134724",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "DESKTOP-6HA4CKI 8152",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:58.310373",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "@Dancing Goats Customer",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:07:58.483565",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "MySpectrumWiFi08-5G",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:58.652995",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "MySpectrumWiFi08-2G_EXT",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:58.816424",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "MySpectrumWiFi08-2G",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:59.043241",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Apocalypse Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:59.211256",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "4763 Vero Beach",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:59.399330",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "4763 Vero Beach-5G",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:59.629905",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "NETGEAR14-5G",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:59.806403",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "StrangeBrewCoho",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:07:59.951947",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "StrangeBrewCoho1",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:00.116387",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "strangebrewcoffeehouse",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:00.297166",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "929Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:00.449544",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Filter guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:00.634464",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "DandB_Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:00.843239",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "REDCAT GUEST 5G",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:01.016813",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "UA-Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:08:01.316002",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "FIVE/JAVA_Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:08:01.472015",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "ARRIS-F6B5-5G",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:01.661557",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "ARRIS-F6B5",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:01.825974",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Coffee House on 5th- Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:08:01.979326",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "NETGEAR14",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:02.141964",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "NOPSI_Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:08:02.320130",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "SBR_GUEST",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:08:02.472965",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "TP-Link_AF9F",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:02.637503",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "ATT4r9B5In",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:02.816629",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "StrangeBrewCoffeehouse",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:02.993088",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "SBC - Guest -5G",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:03.154962",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "SBC -Guest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:03.309605",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "ASHLEY",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:03.500323",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "ASHLEY 5-G",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:03.687909",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "DIRECT-81-HP DeskJet 2600 series",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:03.860345",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "ARRIS-B1CD-5G",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:04.019990",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "Livetothemaxx0076-5G",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:04.183265",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "The Retreat",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:08:04.337797",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "The Retreat (Secure)",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:08:04.548631",
+    "authentication": "WPA2-Enterprise"
+  },
+  {
+    "ssid": "NETGEAR05-5G",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:04.903970",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "ATT7p3I5C6",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:05.070920",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "ICEmployee",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:05.236946",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "ARRIS-1099-5G",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:05.399143",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "ARRIS-1099",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "WPA/WPA2",
+    "timestamp": "2025-08-22T00:08:05.561373",
+    "authentication": "WPA2-Personal"
+  },
+  {
+    "ssid": "msuguest",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:08:05.751270",
+    "authentication": "Open"
+  },
+  {
+    "ssid": "PANERA",
+    "bssid": "Unknown",
+    "signal_strength": -100,
+    "frequency": "Unknown",
+    "channel": "Unknown",
+    "encryption": "Open",
+    "timestamp": "2025-08-22T00:08:05.930071",
+    "authentication": "Open"
+  }
+]

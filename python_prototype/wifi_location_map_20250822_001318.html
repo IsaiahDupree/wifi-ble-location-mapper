@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WiFi Networks Around You - Location Visualizer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+        #map { height: 100vh; width: 100%; }
+        
+        .info-panel {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            max-width: 320px;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        
+        .info-panel h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 1.3em;
+        }
+        
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+            padding: 5px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .legend {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        
+        .legend h4 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+        
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 12px;
+            border: 2px solid white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+        
+        .controls {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        
+        .control-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        
+        .control-btn:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    
+    <div class="controls">
+        <button class="control-btn" onclick="map.setView([40.7128, -74.006], 16)">🎯 Center on You</button>
+        <button class="control-btn" onclick="toggleDistanceCircles()">📏 Toggle Ranges</button>
+    </div>
+    
+    <div class="info-panel">
+        <h3>🌐 WiFi Detection Results</h3>
+        <div class="stat-item">
+            <span><strong>Networks Found:</strong></span>
+            <span>118</span>
+        </div>
+        <div class="stat-item">
+            <span><strong>Your Location:</strong></span>
+            <span>Center</span>
+        </div>
+        <div class="stat-item">
+            <span><strong>Open Networks:</strong></span>
+            <span>39</span>
+        </div>
+        <div class="stat-item">
+            <span><strong>Secured Networks:</strong></span>
+            <span>79</span>
+        </div>
+        <div class="stat-item">
+            <span><strong>Scan Time:</strong></span>
+            <span>00:13</span>
+        </div>
+        <hr style="margin: 15px 0; border: none; border-top: 1px solid #ecf0f1;">
+        <p style="font-size: 0.9em; color: #7f8c8d; margin: 0;">
+            <em>Networks positioned by estimated location based on signal strength and type</em>
+        </p>
+    </div>
+    
+    <div class="legend">
+        <h4>🎯 Map Legend</h4>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #e74c3c; width: 20px; height: 20px;"></div>
+            <span><strong>You (Detection Center)</strong></span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #27ae60;"></div>
+            <span>Strong Signal (-50+ dBm)</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #f39c12;"></div>
+            <span>Medium Signal (-50 to -70 dBm)</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #95a5a6;"></div>
+            <span>Weak Signal (-70+ dBm)</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #3498db;"></div>
+            <span>Open Network</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #9b59b6;"></div>
+            <span>Secured Network</span>
+        </div>
+    </div>
+
+    <script>
+        // Initialize map
+        var map = L.map('map').setView([40.7128, -74.006], 15);
+        
+        // Add map tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors | WiFi Detection System'
+        }).addTo(map);
+        
+        // Your location marker (center)
+        var yourLocationIcon = L.divIcon({
+            className: 'your-location-marker',
+            html: `<div style="
+                background: #e74c3c; 
+                width: 24px; 
+                height: 24px; 
+                border-radius: 50%; 
+                border: 4px solid white; 
+                box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+                position: relative;
+            ">
+                <div style="
+                    position: absolute;
+                    top: -8px;
+                    left: -8px;
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid #e74c3c;
+                    border-radius: 50%;
+                    animation: pulse 2s infinite;
+                    opacity: 0.6;
+                "></div>
+            </div>
+            <style>
+                @keyframes pulse {
+                    0% { transform: scale(0.8); opacity: 0.8; }
+                    50% { transform: scale(1.2); opacity: 0.3; }
+                    100% { transform: scale(0.8); opacity: 0.8; }
+                }
+            </style>`,
+            iconSize: [24, 24],
+            iconAnchor: [12, 12]
+        });
+        
+        var yourLocation = L.marker([40.7128, -74.006], {
+            icon: yourLocationIcon
+        }).addTo(map);
+        
+        yourLocation.bindPopup(`
+            <div style="text-align: center; min-width: 200px;">
+                <h4>📍 Your Location</h4>
+                <p><strong>Detection Center</strong></p>
+                <p>Lat: 40.712800<br>Lon: -74.006000</p>
+                <p style="color: #7f8c8d; font-size: 0.9em;">
+                    <em>All WiFi networks are positioned relative to this point</em>
+                </p>
+            </div>
+        `);
+        
+        // Network data
+        var networks = [{"network": {"ssid": "Welcome2ATL", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:45.511528", "authentication": "WPA2-Personal"}, "lat": 40.72616872367628, "lon": -73.99228131181738}, {"network": {"ssid": "Troy and Abed in the Modem", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:45.731193", "authentication": "WPA2-Personal"}, "lat": 40.720189198891056, "lon": -73.99590882700022}, {"network": {"ssid": "Haan-guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:45.887619", "authentication": "WPA2-Personal"}, "lat": 40.72395251991889, "lon": -74.01112478133543}, {"network": {"ssid": "attinternet", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:46.049537", "authentication": "WPA2-Personal"}, "lat": 40.70653362031973, "lon": -73.99395830954458}, {"network": {"ssid": "ATT4t2Bxn7", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:46.227757", "authentication": "WPA2-Personal"}, "lat": 40.70994719620906, "lon": -73.98748130609522}, {"network": {"ssid": "Lark Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:46.419836", "authentication": "Open"}, "lat": 40.71785900336028, "lon": -73.9930852136968}, {"network": {"ssid": "Error", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:46.624285", "authentication": "WPA2-Personal"}, "lat": 40.72174697828893, "lon": -74.0258781461296}, {"network": {"ssid": "Daily Grind", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:46.802976", "authentication": "WPA2-Personal"}, "lat": 40.71172442888918, "lon": -73.99542950082021}, {"network": {"ssid": "iPhone", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:46.957846", "authentication": "WPA3-Personal"}, "lat": 40.717086237283155, "lon": -73.98678436761688}, {"network": {"ssid": "Cool Beans Coffee  5G 1", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:47.115593", "authentication": "WPA2-Personal"}, "lat": 40.709915857501876, "lon": -73.99944357248759}, {"network": {"ssid": "MariettaPerks-Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:47.272753", "authentication": "WPA2-Personal"}, "lat": 40.7031908342746, "lon": -74.01302630703206}, {"network": {"ssid": "_LinksysSetup159-guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:47.433974", "authentication": "WPA2-Personal"}, "lat": 40.710311294390294, "lon": -74.01594169153871}, {"network": {"ssid": "SpectrumSetup-BD", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:47.596262", "authentication": "WPA2-Personal"}, "lat": 40.72185197649477, "lon": -74.01645349869231}, {"network": {"ssid": "WPL-Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:47.748232", "authentication": "Open"}, "lat": 40.72036562706549, "lon": -73.99924621021722}, {"network": {"ssid": "Stone Cup WiFi", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:47.915224", "authentication": "WPA2-Personal"}, "lat": 40.726434364916116, "lon": -74.01208193298909}, {"network": {"ssid": "Meanmug Coffee", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:48.075153", "authentication": "WPA2-Personal"}, "lat": 40.71974591214471, "lon": -74.00023917113064}, {"network": {"ssid": "Oaks - Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:48.233350", "authentication": "WPA2-Personal"}, "lat": 40.7137028416402, "lon": -73.98786318136865}, {"network": {"ssid": "ATTQKXQxne", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:48.400878", "authentication": "WPA2-Personal"}, "lat": 40.71170912128453, "lon": -73.9898293056542}, {"network": {"ssid": "WhiteSky-PublicWiFi", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:48.585885", "authentication": "Open"}, "lat": 40.70459009836925, "lon": -74.01028732265662}, {"network": {"ssid": "WLED-AP", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:48.732407", "authentication": "WPA2-Personal"}, "lat": 40.69755514065722, "lon": -73.99427895416258}, {"network": {"ssid": "ATT8ePb7xg", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:48.894774", "authentication": "WPA2-Personal"}, "lat": 40.702088093158125, "lon": -73.99988031739277}, {"network": {"ssid": "fossy", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:49.044303", "authentication": "WPA2-Personal"}, "lat": 40.713701646098464, "lon": -74.02717998141978}, {"network": {"ssid": "Plant", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:49.245573", "authentication": "WPA2-Personal"}, "lat": 40.710664023985956, "lon": -73.9855375913984}, {"network": {"ssid": "Livetothemaxx0076", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:49.413449", "authentication": "WPA2-Personal"}, "lat": 40.71440599690193, "lon": -74.02006501352781}, {"network": {"ssid": "Island", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:49.592807", "authentication": "WPA2-Personal"}, "lat": 40.72987842749451, "lon": -74.0007199817209}, {"network": {"ssid": "Bed", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:49.782636", "authentication": "WPA2-Personal"}, "lat": 40.71221577972541, "lon": -73.99329820153318}, {"network": {"ssid": "ARRIS-B1CD", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:49.956595", "authentication": "WPA2-Personal"}, "lat": 40.72473952355883, "lon": -74.00142741317178}, {"network": {"ssid": "Lineage Coffee", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:50.141742", "authentication": "Open"}, "lat": 40.72032499884672, "lon": -74.00411788923897}, {"network": {"ssid": "ATTu4KWQEm", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:50.326998", "authentication": "WPA2-Personal"}, "lat": 40.727848275085755, "lon": -74.00918535090868}, {"network": {"ssid": "Quality Inn", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:50.567521", "authentication": "Open"}, "lat": 40.72115107721524, "lon": -74.0126072488637}, {"network": {"ssid": "Hilton Honors", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:50.782334", "authentication": "Open"}, "lat": 40.72034474624048, "lon": -74.00471893953667}, {"network": {"ssid": "Subculture Coffee FREE WiFi", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:50.941748", "authentication": "Open"}, "lat": 40.717279521880364, "lon": -74.0165082764405}, {"network": {"ssid": "SpectrumSetup-CF", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:51.099396", "authentication": "WPA2-Personal"}, "lat": 40.723102492604184, "lon": -74.02379782227652}, {"network": {"ssid": "3D Printer", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:51.362711", "authentication": "WPA2-Personal"}, "lat": 40.71332663101925, "lon": -73.9912911684343}, {"network": {"ssid": "Panera", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:51.532870", "authentication": "Open"}, "lat": 40.70597347652625, "lon": -74.01323403416632}, {"network": {"ssid": "TampaPrintWiFi", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:51.666910", "authentication": "WPA2-Personal"}, "lat": 40.70448967660883, "lon": -73.99902405433988}, {"network": {"ssid": "Moe's Guest WiFi", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:51.799982", "authentication": "Open"}, "lat": 40.72690560943553, "lon": -74.00279005011774}, {"network": {"ssid": "Avenue WiFi", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:51.938807", "authentication": "Open"}, "lat": 40.716647030327344, "lon": -74.01275056430991}, {"network": {"ssid": "Liteshow4", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:52.067992", "authentication": "Open"}, "lat": 40.71730339819764, "lon": -74.0156204394066}, {"network": {"ssid": "BCCOFFEE", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:52.221913", "authentication": "WPA2-Personal"}, "lat": 40.70713519044475, "lon": -73.99729670459476}, {"network": {"ssid": "Foxtail Coffee Co", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:52.390720", "authentication": "Open"}, "lat": 40.7158315186003, "lon": -73.99998420046516}, {"network": {"ssid": "Happy wifi happy life", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:52.571884", "authentication": "WPA2-Personal"}, "lat": 40.72378625926073, "lon": -73.99174164507306}, {"network": {"ssid": "Blind Tiger Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:52.765613", "authentication": "Open"}, "lat": 40.72196790630563, "lon": -74.01679083508019}, {"network": {"ssid": "Starbucks", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:52.917361", "authentication": "Open"}, "lat": 40.70456577727625, "lon": -74.00493926085615}, {"network": {"ssid": "Armature_Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:53.108864", "authentication": "Open"}, "lat": 40.72285294746129, "lon": -74.00571226767408}, {"network": {"ssid": "Guest of Casa Paraiso", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:53.276386", "authentication": "WPA2-Personal"}, "lat": 40.72177847273345, "lon": -74.00324902216617}, {"network": {"ssid": "DI Coffee Bar Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:53.433776", "authentication": "Open"}, "lat": 40.715790412398306, "lon": -74.00003446772372}, {"network": {"ssid": "The Pour", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:53.608097", "authentication": "WPA2-Personal"}, "lat": 40.69759150985163, "lon": -73.99988686555459}, {"network": {"ssid": "paceeamore", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:53.770645", "authentication": "WPA2-Personal"}, "lat": 40.706882022952215, "lon": -73.99416148053236}, {"network": {"ssid": "dripcoffee", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:53.926200", "authentication": "WPA2-Personal"}, "lat": 40.70995430860267, "lon": -73.99553421501676}, {"network": {"ssid": "Emerald Airbnb", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:54.076810", "authentication": "WPA2-Personal"}, "lat": 40.70355635380451, "lon": -74.01583493243898}, {"network": {"ssid": "Joffreys_Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:54.235720", "authentication": "WPA2-Personal"}, "lat": 40.717409474969436, "lon": -74.0209533369541}, {"network": {"ssid": "Element", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:54.407507", "authentication": "Open"}, "lat": 40.71254871084849, "lon": -74.01827672408328}, {"network": {"ssid": "MidtownTampa_Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:54.599786", "authentication": "Open"}, "lat": 40.708920771893176, "lon": -73.99636666289017}, {"network": {"ssid": "WalkOnsTampa-Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:54.765236", "authentication": "Open"}, "lat": 40.72247452955896, "lon": -74.01881689977854}, {"network": {"ssid": "Starbucks-Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:54.945354", "authentication": "Open"}, "lat": 40.70335295878457, "lon": -74.00896504783582}, {"network": {"ssid": "WholeFoodsMarket", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:55.089552", "authentication": "Open"}, "lat": 40.7251695290167, "lon": -74.00451640810599}, {"network": {"ssid": "Grind Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:55.248554", "authentication": "WPA2-Personal"}, "lat": 40.715392873078706, "lon": -74.01485604804684}, {"network": {"ssid": "Eero_Home", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:55.404704", "authentication": "WPA2-Personal"}, "lat": 40.709689402833845, "lon": -73.98766223724132}, {"network": {"ssid": "Foxtail Coffee Co", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:55.582622", "authentication": "Open"}, "lat": 40.713225778054614, "lon": -73.99822574715492}, {"network": {"ssid": "Axum Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:55.767320", "authentication": "Open"}, "lat": 40.71979023020489, "lon": -74.0019201153253}, {"network": {"ssid": "Starbucks WiFi", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:55.933334", "authentication": "Open"}, "lat": 40.71255776799474, "lon": -73.99871227424494}, {"network": {"ssid": "Disney-Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:56.094132", "authentication": "Open"}, "lat": 40.699841797437315, "lon": -74.00432996581377}, {"network": {"ssid": "_iGuest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:56.256365", "authentication": "Open"}, "lat": 40.7039929892538, "lon": -74.01199233636248}, {"network": {"ssid": "Flag Coffee Corner - Latte", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:56.426622", "authentication": "WPA2-Personal"}, "lat": 40.71905013468435, "lon": -74.01042275662702}, {"network": {"ssid": "MySpectrumWiFib4-5G", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:56.634776", "authentication": "WPA2-Personal"}, "lat": 40.70754419166178, "lon": -74.01981899816651}, {"network": {"ssid": "MySpectrumWiFib4-2G", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:56.807478", "authentication": "WPA2-Personal"}, "lat": 40.72638800699435, "lon": -73.99732279110077}, {"network": {"ssid": "suncreekwifi", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:56.997679", "authentication": "WPA2-Personal"}, "lat": 40.7297490674867, "lon": -74.01083512638021}, {"network": {"ssid": "JMG Resident Wi-Fi", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:57.177133", "authentication": "Open"}, "lat": 40.7241804514795, "lon": -74.00334430868159}, {"network": {"ssid": "Spectrum Free Trial", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:57.334517", "authentication": "Open"}, "lat": 40.70859277314572, "lon": -74.01589896594251}, {"network": {"ssid": "BNWiFi", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:57.489259", "authentication": "Open"}, "lat": 40.716062247501476, "lon": -74.0165009757018}, {"network": {"ssid": "Cabin", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:57.665387", "authentication": "WPA2-Personal"}, "lat": 40.725334627602834, "lon": -73.99453747105107}, {"network": {"ssid": "Tyummi Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:57.824478", "authentication": "WPA2-Personal"}, "lat": 40.703959116402835, "lon": -74.01372056895607}, {"network": {"ssid": "Strange Wi-Fi", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:57.978379", "authentication": "WPA2-Personal"}, "lat": 40.72033813254205, "lon": -73.99642678667442}, {"network": {"ssid": "Copy Cow Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:58.134724", "authentication": "WPA2-Personal"}, "lat": 40.72112188364383, "lon": -74.00421016217572}, {"network": {"ssid": "DESKTOP-6HA4CKI 8152", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:58.310373", "authentication": "WPA2-Personal"}, "lat": 40.715947138029875, "lon": -73.99402878715408}, {"network": {"ssid": "@Dancing Goats Customer", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:07:58.483565", "authentication": "Open"}, "lat": 40.722922594235435, "lon": -73.9974829917585}, {"network": {"ssid": "MySpectrumWiFi08-5G", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:58.652995", "authentication": "WPA2-Personal"}, "lat": 40.71545012393813, "lon": -73.99280128394102}, {"network": {"ssid": "MySpectrumWiFi08-2G_EXT", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:58.816424", "authentication": "WPA2-Personal"}, "lat": 40.720018097265815, "lon": -74.01768629377506}, {"network": {"ssid": "MySpectrumWiFi08-2G", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:59.043241", "authentication": "WPA2-Personal"}, "lat": 40.702950989937115, "lon": -74.01230077864949}, {"network": {"ssid": "Apocalypse Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:59.211256", "authentication": "WPA2-Personal"}, "lat": 40.70922598142258, "lon": -73.99546609515926}, {"network": {"ssid": "4763 Vero Beach", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:59.399330", "authentication": "WPA2-Personal"}, "lat": 40.714196648521536, "lon": -74.02349785795772}, {"network": {"ssid": "4763 Vero Beach-5G", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:59.629905", "authentication": "WPA2-Personal"}, "lat": 40.7077814629976, "lon": -73.99563095626388}, {"network": {"ssid": "NETGEAR14-5G", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:59.806403", "authentication": "WPA2-Personal"}, "lat": 40.70588568715196, "lon": -74.02621377648656}, {"network": {"ssid": "StrangeBrewCoho", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:07:59.951947", "authentication": "WPA2-Personal"}, "lat": 40.70109684026666, "lon": -74.01242201268303}, {"network": {"ssid": "StrangeBrewCoho1", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:00.116387", "authentication": "WPA2-Personal"}, "lat": 40.69557813653342, "lon": -74.00062686234175}, {"network": {"ssid": "strangebrewcoffeehouse", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:00.297166", "authentication": "WPA2-Personal"}, "lat": 40.72274047991349, "lon": -74.00274926300199}, {"network": {"ssid": "929Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:00.449544", "authentication": "WPA2-Personal"}, "lat": 40.7074421627873, "lon": -73.99850932682423}, {"network": {"ssid": "Filter guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:00.634464", "authentication": "WPA2-Personal"}, "lat": 40.71603370258042, "lon": -74.02014004938111}, {"network": {"ssid": "DandB_Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:00.843239", "authentication": "WPA2-Personal"}, "lat": 40.71704146153741, "lon": -74.0178985517563}, {"network": {"ssid": "REDCAT GUEST 5G", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:01.016813", "authentication": "WPA2-Personal"}, "lat": 40.713569100918065, "lon": -74.02278876528216}, {"network": {"ssid": "UA-Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:08:01.316002", "authentication": "Open"}, "lat": 40.717969885958894, "lon": -73.9904813363821}, {"network": {"ssid": "FIVE/JAVA_Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:08:01.472015", "authentication": "Open"}, "lat": 40.70268502794813, "lon": -74.01379186511592}, {"network": {"ssid": "ARRIS-F6B5-5G", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:01.661557", "authentication": "WPA2-Personal"}, "lat": 40.722288152898216, "lon": -73.98803808636795}, {"network": {"ssid": "ARRIS-F6B5", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:01.825974", "authentication": "WPA2-Personal"}, "lat": 40.72049684526969, "lon": -73.98485272945052}, {"network": {"ssid": "Coffee House on 5th- Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:08:01.979326", "authentication": "Open"}, "lat": 40.71821457142524, "lon": -74.00712277791847}, {"network": {"ssid": "NETGEAR14", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:02.141964", "authentication": "WPA2-Personal"}, "lat": 40.7142824437251, "lon": -74.02460438782744}, {"network": {"ssid": "NOPSI_Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:08:02.320130", "authentication": "Open"}, "lat": 40.703734631513434, "lon": -73.99697400178015}, {"network": {"ssid": "SBR_GUEST", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:08:02.472965", "authentication": "Open"}, "lat": 40.72592055606237, "lon": -73.99874359968645}, {"network": {"ssid": "TP-Link_AF9F", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:02.637503", "authentication": "WPA2-Personal"}, "lat": 40.699382143469144, "lon": -73.99538101209282}, {"network": {"ssid": "ATT4r9B5In", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:02.816629", "authentication": "WPA2-Personal"}, "lat": 40.708097515828456, "lon": -73.99430117309042}, {"network": {"ssid": "StrangeBrewCoffeehouse", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:02.993088", "authentication": "WPA2-Personal"}, "lat": 40.721904122626796, "lon": -74.01058741775894}, {"network": {"ssid": "SBC - Guest -5G", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:03.154962", "authentication": "WPA2-Personal"}, "lat": 40.7051505515394, "lon": -73.99964711582147}, {"network": {"ssid": "SBC -Guest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:03.309605", "authentication": "WPA2-Personal"}, "lat": 40.70661350998915, "lon": -74.01195145853947}, {"network": {"ssid": "ASHLEY", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:03.500323", "authentication": "WPA2-Personal"}, "lat": 40.702437843104065, "lon": -73.9949222107453}, {"network": {"ssid": "ASHLEY 5-G", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:03.687909", "authentication": "WPA2-Personal"}, "lat": 40.727391196134185, "lon": -74.00674683932137}, {"network": {"ssid": "DIRECT-81-HP DeskJet 2600 series", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:03.860345", "authentication": "WPA2-Personal"}, "lat": 40.729176613211244, "lon": -73.99804588782017}, {"network": {"ssid": "ARRIS-B1CD-5G", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:04.019990", "authentication": "WPA2-Personal"}, "lat": 40.71447934345845, "lon": -73.99402894044997}, {"network": {"ssid": "Livetothemaxx0076-5G", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:04.183265", "authentication": "WPA2-Personal"}, "lat": 40.71218558606137, "lon": -73.99202670107024}, {"network": {"ssid": "The Retreat", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:08:04.337797", "authentication": "Open"}, "lat": 40.71919388066688, "lon": -74.02010563854158}, {"network": {"ssid": "The Retreat (Secure)", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:08:04.548631", "authentication": "WPA2-Enterprise"}, "lat": 40.714715299547315, "lon": -73.99801767265976}, {"network": {"ssid": "NETGEAR05-5G", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:04.903970", "authentication": "WPA2-Personal"}, "lat": 40.70987256465883, "lon": -73.99110168270234}, {"network": {"ssid": "ATT7p3I5C6", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:05.070920", "authentication": "WPA2-Personal"}, "lat": 40.718357780726414, "lon": -73.99623496352405}, {"network": {"ssid": "ICEmployee", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:05.236946", "authentication": "WPA2-Personal"}, "lat": 40.71994114735152, "lon": -74.0144068778624}, {"network": {"ssid": "ARRIS-1099-5G", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:05.399143", "authentication": "WPA2-Personal"}, "lat": 40.6972670394441, "lon": -74.00873095754653}, {"network": {"ssid": "ARRIS-1099", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "WPA/WPA2", "timestamp": "2025-08-22T00:08:05.561373", "authentication": "WPA2-Personal"}, "lat": 40.727794679351256, "lon": -74.01818887688782}, {"network": {"ssid": "msuguest", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:08:05.751270", "authentication": "Open"}, "lat": 40.724478295508874, "lon": -74.00508219708874}, {"network": {"ssid": "PANERA", "bssid": "Unknown", "signal_strength": -100, "frequency": "Unknown", "channel": "Unknown", "encryption": "Open", "timestamp": "2025-08-22T00:08:05.930071", "authentication": "Open"}, "lat": 40.71676133648558, "lon": -74.0173966992748}];
+        
+        // Add network markers
+        networks.forEach(function(item, index) {
+            var network = item.network;
+            var lat = item.lat;
+            var lon = item.lon;
+            
+            // Determine colors
+            var signalColor = '#95a5a6'; // Default weak
+            if (network.signal_strength > -50) {
+                signalColor = '#27ae60'; // Strong
+            } else if (network.signal_strength > -70) {
+                signalColor = '#f39c12'; // Medium
+            }
+            
+            var finalColor = network.encryption === 'Open' ? '#3498db' : signalColor;
+            
+            // Create marker
+            var networkIcon = L.divIcon({
+                className: 'network-marker',
+                html: `<div style="
+                    background: ${finalColor}; 
+                    width: 14px; 
+                    height: 14px; 
+                    border-radius: 50%; 
+                    border: 2px solid white; 
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+                "></div>`,
+                iconSize: [14, 14],
+                iconAnchor: [7, 7]
+            });
+            
+            var marker = L.marker([lat, lon], {
+                icon: networkIcon
+            }).addTo(map);
+            
+            // Popup content
+            var signalIcon = network.signal_strength > -50 ? '🟢' : 
+                           network.signal_strength > -70 ? '🟡' : '🔴';
+            var securityIcon = network.encryption === 'Open' ? '🔓' : '🔒';
+            var networkType = getNetworkType(network.ssid);
+            
+            marker.bindPopup(`
+                <div style="min-width: 250px;">
+                    <h4>${signalIcon} ${network.ssid || 'Hidden Network'}</h4>
+                    <table style="width: 100%; font-size: 0.9em;">
+                        <tr><td><strong>Signal Strength:</strong></td><td>${network.signal_strength} dBm</td></tr>
+                        <tr><td><strong>Security:</strong></td><td>${securityIcon} ${network.encryption}</td></tr>
+                        <tr><td><strong>Network Type:</strong></td><td>${networkType}</td></tr>
+                        <tr><td><strong>BSSID:</strong></td><td style="font-family: monospace; font-size: 0.8em;">${network.bssid}</td></tr>
+                    </table>
+                    <hr style="margin: 10px 0;">
+                    <p style="font-size: 0.8em; color: #7f8c8d; margin: 0;">
+                        <em>📍 Estimated location based on signal analysis</em>
+                    </p>
+                </div>
+            `);
+        });
+        
+        // Distance circles
+        var distanceCircles = [];
+        var circlesVisible = false;
+        
+        function toggleDistanceCircles() {
+            if (circlesVisible) {
+                distanceCircles.forEach(circle => map.removeLayer(circle));
+                distanceCircles = [];
+                circlesVisible = false;
+            } else {
+                var ranges = [100, 300, 500, 1000, 1500];
+                var colors = ['#e74c3c', '#f39c12', '#f1c40f', '#2ecc71', '#3498db'];
+                
+                ranges.forEach(function(radius, index) {
+                    var circle = L.circle([40.7128, -74.006], {
+                        color: colors[index],
+                        fillColor: 'transparent',
+                        fillOpacity: 0,
+                        radius: radius,
+                        weight: 2,
+                        opacity: 0.6,
+                        dashArray: '8, 8'
+                    }).addTo(map);
+                    
+                    distanceCircles.push(circle);
+                });
+                circlesVisible = true;
+            }
+        }
+        
+        function getNetworkType(ssid) {
+            if (!ssid) return '❓ Unknown';
+            var lower = ssid.toLowerCase();
+            if (lower.includes('starbucks') || lower.includes('coffee') || lower.includes('panera')) return '☕ Coffee Shop';
+            if (lower.includes('hotel') || lower.includes('guest') || lower.includes('inn')) return '🏨 Hotel/Guest';
+            if (lower.includes('att') || lower.includes('spectrum') || lower.includes('xfinity')) return '🏠 ISP/Residential';
+            if (lower.includes('disney') || lower.includes('universal')) return '🎢 Entertainment';
+            return '🏢 Business/Other';
+        }
+        
+        // Add scale
+        L.control.scale({position: 'bottomright'}).addTo(map);
+    </script>
+</body>
+</html>
+    

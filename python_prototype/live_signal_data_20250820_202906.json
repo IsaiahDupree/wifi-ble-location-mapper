@@ -1,0 +1,3000 @@
+{
+  "signal_data": [
+    {
+      "timestamp": "2025-08-20T20:29:06.940342",
+      "location": {
+        "latitude": 40.71257320701107,
+        "longitude": -74.0051330346855,
+        "altitude": 6.476117309039048,
+        "speed": 1.367002829855139,
+        "heading": 118.86835075279907,
+        "accuracy": 5.0,
+        "timestamp": "2025-08-20T20:28:49.629352",
+        "source": "Simulated",
+        "satellites": 8
+      },
+      "wifi_networks": [
+        {
+          "ssid": "Welcome2ATL",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:49.957271",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Troy and Abed in the Modem",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:50.108342",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Haan-guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:50.282450",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "attinternet",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:50.432167",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "ATT4t2Bxn7",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:50.581436",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Lark Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:50.733430",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Error",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:50.864553",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Daily Grind",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:50.992621",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "iPhone",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:51.118972",
+          "authentication": "WPA3-Personal"
+        },
+        {
+          "ssid": "Cool Beans Coffee  5G 1",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:51.241024",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "MariettaPerks-Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:51.370534",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "_LinksysSetup159-guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:51.493132",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "SpectrumSetup-BD",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:51.631343",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "WPL-Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:51.777183",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Stone Cup WiFi",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:51.960170",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Meanmug Coffee",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:52.156817",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Oaks - Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:52.305264",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "ATTQKXQxne",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:52.427802",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "WhiteSky-PublicWiFi",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:52.542228",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "WLED-AP",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:52.658958",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "ATT8ePb7xg",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:52.769107",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "fossy",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:52.888315",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Plant",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:53.001809",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Livetothemaxx0076",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:53.122069",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Island",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:53.236986",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Bed",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:53.359010",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "ARRIS-B1CD",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:53.480152",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Lineage Coffee",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:53.603632",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "ATTu4KWQEm",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:53.734805",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Quality Inn",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:53.863419",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Hilton Honors",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:53.986388",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Subculture Coffee FREE WiFi",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:54.111546",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "SpectrumSetup-CF",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:54.269279",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "3D Printer",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:54.525180",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Panera",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:54.671158",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "TampaPrintWiFi",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:54.800153",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Moe's Guest WiFi",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:54.929934",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Avenue WiFi",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:55.055424",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Liteshow4",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:55.184784",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "BCCOFFEE",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:55.315683",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Foxtail Coffee Co",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:55.461330",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Happy wifi happy life",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:55.600629",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Blind Tiger Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:55.733492",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Starbucks",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:55.890101",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Armature_Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:56.057934",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Guest of Casa Paraiso",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:56.194213",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "DI Coffee Bar Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:56.317509",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "The Pour",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:56.452123",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "paceeamore",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:56.605005",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "dripcoffee",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:56.741896",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Emerald Airbnb",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:56.877149",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Joffreys_Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:57.000606",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Element",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:57.127097",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "MidtownTampa_Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:57.255387",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "WalkOnsTampa-Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:57.391574",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Starbucks-Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:57.515211",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "WholeFoodsMarket",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:57.646250",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Grind Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:57.792357",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Eero_Home",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:57.961198",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Foxtail Coffee Co",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:58.110040",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Axum Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:58.258616",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Starbucks WiFi",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:58.404866",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Disney-Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:58.550068",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "_iGuest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:58.721626",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Flag Coffee Corner - Latte",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:58.868617",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "MySpectrumWiFib4-5G",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:59.015209",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "MySpectrumWiFib4-2G",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:59.168646",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "suncreekwifi",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:59.337745",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "JMG Resident Wi-Fi",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:59.486982",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Spectrum Free Trial",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:59.629543",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "BNWiFi",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:28:59.801993",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "Cabin",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:28:59.992892",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Tyummi Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:00.261918",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Strange Wi-Fi",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:00.428380",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Copy Cow Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:00.555301",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "DESKTOP-6HA4CKI 8152",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:00.736801",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "@Dancing Goats Customer",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:29:00.884180",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "MySpectrumWiFi08-5G",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:01.017164",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "MySpectrumWiFi08-2G_EXT",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:01.149960",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "MySpectrumWiFi08-2G",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:01.287967",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Apocalypse Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:01.436915",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "4763 Vero Beach",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:01.583102",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "4763 Vero Beach-5G",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:01.717773",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "NETGEAR14-5G",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:01.851831",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "StrangeBrewCoho",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:01.985525",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "StrangeBrewCoho1",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:02.115593",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "strangebrewcoffeehouse",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:02.268577",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "929Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:02.399574",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Filter guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:02.529322",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "DandB_Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:02.674881",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "REDCAT GUEST 5G",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:02.830731",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "UA-Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:29:03.070384",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "FIVE/JAVA_Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:29:03.201742",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "ARRIS-F6B5-5G",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:03.340802",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "ARRIS-F6B5",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:03.469976",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Coffee House on 5th- Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:29:03.604865",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "NETGEAR14",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:03.756928",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "NOPSI_Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:29:03.932087",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "SBR_GUEST",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:29:04.076887",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "TP-Link_AF9F",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:04.202903",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "ATT4r9B5In",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:04.335770",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "StrangeBrewCoffeehouse",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:04.485952",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "SBC - Guest -5G",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:04.629572",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "SBC -Guest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:04.755074",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "ASHLEY",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:04.886411",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "ASHLEY 5-G",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:05.045955",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "DIRECT-81-HP DeskJet 2600 series",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:05.186328",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "ARRIS-B1CD-5G",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:05.319711",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "Livetothemaxx0076-5G",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:05.450187",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "The Retreat",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:29:05.580584",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "The Retreat (Secure)",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:29:05.760931",
+          "authentication": "WPA2-Enterprise"
+        },
+        {
+          "ssid": "NETGEAR05-5G",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:05.889762",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "ATT7p3I5C6",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:06.047914",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "ICEmployee",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:06.206405",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "ARRIS-1099-5G",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:06.355022",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "ARRIS-1099",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "WPA/WPA2",
+          "timestamp": "2025-08-20T20:29:06.482912",
+          "authentication": "WPA2-Personal"
+        },
+        {
+          "ssid": "msuguest",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:29:06.616523",
+          "authentication": "Open"
+        },
+        {
+          "ssid": "PANERA",
+          "bssid": "Unknown",
+          "signal_strength": -100,
+          "frequency": "Unknown",
+          "channel": "Unknown",
+          "encryption": "Open",
+          "timestamp": "2025-08-20T20:29:06.778413",
+          "authentication": "Open"
+        }
+      ],
+      "bluetooth_devices": []
+    }
+  ],
+  "wifi_heatmap": {
+    "Unknown": {
+      "40.7126,-74.0051": [
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        },
+        {
+          "signal": -100,
+          "timestamp": "2025-08-20T20:29:06.940342",
+          "location": {
+            "latitude": 40.71257320701107,
+            "longitude": -74.0051330346855,
+            "altitude": 6.476117309039048,
+            "speed": 1.367002829855139,
+            "heading": 118.86835075279907,
+            "accuracy": 5.0,
+            "timestamp": "2025-08-20T20:28:49.629352",
+            "source": "Simulated",
+            "satellites": 8
+          }
+        }
+      ]
+    }
+  },
+  "bluetooth_heatmap": {},
+  "wifi_analysis": {
+    "total_networks": 1,
+    "total_locations": 1,
+    "total_readings": 1,
+    "network_stats": {
+      "Unknown": {
+        "locations_count": 1,
+        "readings_count": 118,
+        "avg_signal": -100.0,
+        "min_signal": -100,
+        "max_signal": -100,
+        "signal_range": 0
+      }
+    }
+  },
+  "bluetooth_analysis": {
+    "total_networks": 0,
+    "total_locations": 0,
+    "total_readings": 1,
+    "network_stats": {}
+  },
+  "export_timestamp": "2025-08-20T20:29:06.940342"
+}

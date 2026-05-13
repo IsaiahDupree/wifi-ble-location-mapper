@@ -1,0 +1,4 @@
+Requirement already satisfied: bleak in c:\users\isaia\appdata\local\programs\python\python38\lib\site-packages (0.22.3)
+Requirement already satisfied: async-timeout<5,>=3.0.0 in c:\users\isaia\appdata\local\programs\python\python38\lib\site-packages (from bleak) (4.0.3)
+Requirement already satisfied: bleak-winrt<2.0.0,>=1.2.0 in c:\users\isaia\appdata\local\programs\python\python38\lib\site-packages (from bleak) (1.2.0)
+Requirement already satisfied: typing-extensions>=4.7.0 in c:\users\isaia\appdata\local\programs\python\python38\lib\site-packages (from bleak) (4.12.2)

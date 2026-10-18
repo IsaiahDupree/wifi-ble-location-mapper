@@ -1,0 +1,16 @@
+{
+  "supplements_snapshot": "0ca6af354b62cb08-r3",
+  "source_roots": [
+    "C:/Users/Isaia/Documents/Coding/WifiBluetoothMap/wifi-ble-location-mapper"
+  ],
+  "files": {
+    "storage/__init__.py": {
+      "source": "C:\\Users\\Isaia\\Documents\\Coding\\WifiBluetoothMap\\wifi-ble-location-mapper\\storage\\__init__.py",
+      "reason": "portable authored code absent from staged source selection"
+    },
+    "storage/local_storage.py": {
+      "source": "C:\\Users\\Isaia\\Documents\\Coding\\WifiBluetoothMap\\wifi-ble-location-mapper\\storage\\local_storage.py",
+      "reason": "portable authored code absent from staged source selection"
+    }
+  }
+}

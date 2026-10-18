@@ -1,0 +1,1712 @@
+{
+  "86:bb:69:e8:85:b3": {
+    "type": "WiFi",
+    "signal_id": "86:bb:69:e8:85:b3",
+    "name": "ATT8ePb7xg",
+    "rssi": -55,
+    "channel": 153,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T14:43:46.786006"
+  },
+  "04:70:56:94:FE:55": {
+    "type": "BLE",
+    "signal_id": "04:70:56:94:FE:55",
+    "name": "Unknown",
+    "rssi": -92,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T14:43:46.786006"
+  },
+  "5E:60:BA:60:E1:F1": {
+    "type": "BLE",
+    "signal_id": "5E:60:BA:60:E1:F1",
+    "name": "Unknown",
+    "rssi": -86,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T14:43:46.786006"
+  },
+  "BE:67:00:83:0F:97": {
+    "type": "BLE",
+    "signal_id": "BE:67:00:83:0F:97",
+    "name": "ELK-BLEDOM07",
+    "rssi": -85,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T14:43:46.786006"
+  },
+  "5A:EC:1F:F7:E6:3E": {
+    "type": "BLE",
+    "signal_id": "5A:EC:1F:F7:E6:3E",
+    "name": "Unknown",
+    "rssi": -88,
+    "channel": null,
+    "last_seen": "2025-08-29T14:43:46.786006",
+    "first_seen": "2025-08-29T14:43:46.786006"
+  },
+  "20:15:DE:30:6C:01": {
+    "type": "BLE",
+    "signal_id": "20:15:DE:30:6C:01",
+    "name": "Unknown",
+    "rssi": -87,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T14:43:46.786006"
+  },
+  "6E:02:E0:AA:A0:3B": {
+    "type": "BLE",
+    "signal_id": "6E:02:E0:AA:A0:3B",
+    "name": "Unknown",
+    "rssi": -86,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:59.125394",
+    "first_seen": "2025-08-29T14:43:46.786006"
+  },
+  "74:79:AE:39:09:63": {
+    "type": "BLE",
+    "signal_id": "74:79:AE:39:09:63",
+    "name": "Unknown",
+    "rssi": -84,
+    "channel": null,
+    "last_seen": "2025-08-29T14:43:46.786006",
+    "first_seen": "2025-08-29T14:43:46.786006"
+  },
+  "72:42:A8:AF:5F:78": {
+    "type": "BLE",
+    "signal_id": "72:42:A8:AF:5F:78",
+    "name": "Unknown",
+    "rssi": -94,
+    "channel": null,
+    "last_seen": "2025-08-29T14:43:46.786006",
+    "first_seen": "2025-08-29T14:43:46.786006"
+  },
+  "45:9B:DE:64:A5:1F": {
+    "type": "BLE",
+    "signal_id": "45:9B:DE:64:A5:1F",
+    "name": "Unknown",
+    "rssi": -92,
+    "channel": null,
+    "last_seen": "2025-08-29T14:43:46.786006",
+    "first_seen": "2025-08-29T14:43:46.786006"
+  },
+  "12:5B:80:F0:28:2A": {
+    "type": "BLE",
+    "signal_id": "12:5B:80:F0:28:2A",
+    "name": "Unknown",
+    "rssi": -89,
+    "channel": null,
+    "last_seen": "2025-08-29T14:43:46.786006",
+    "first_seen": "2025-08-29T14:43:46.786006"
+  },
+  "77:2A:DF:13:EE:C2": {
+    "type": "BLE",
+    "signal_id": "77:2A:DF:13:EE:C2",
+    "name": "mamaRoo5",
+    "rssi": -91,
+    "channel": null,
+    "last_seen": "2025-08-29T14:43:46.786006",
+    "first_seen": "2025-08-29T14:43:46.786006"
+  },
+  "0C:CE:72:13:46:F1": {
+    "type": "BLE",
+    "signal_id": "0C:CE:72:13:46:F1",
+    "name": "Unknown",
+    "rssi": -92,
+    "channel": null,
+    "last_seen": "2025-08-29T14:53:36.920372",
+    "first_seen": "2025-08-29T14:53:36.920372"
+  },
+  "48:A7:19:D9:97:62": {
+    "type": "BLE",
+    "signal_id": "48:A7:19:D9:97:62",
+    "name": "Unknown",
+    "rssi": -86,
+    "channel": null,
+    "last_seen": "2025-08-29T14:53:36.920372",
+    "first_seen": "2025-08-29T14:53:36.920372"
+  },
+  "0E:CE:B4:76:50:32": {
+    "type": "BLE",
+    "signal_id": "0E:CE:B4:76:50:32",
+    "name": "Unknown",
+    "rssi": -86,
+    "channel": null,
+    "last_seen": "2025-08-29T14:53:36.920372",
+    "first_seen": "2025-08-29T14:53:36.920372"
+  },
+  "7D:C1:E4:31:B7:B7": {
+    "type": "BLE",
+    "signal_id": "7D:C1:E4:31:B7:B7",
+    "name": "Unknown",
+    "rssi": -88,
+    "channel": null,
+    "last_seen": "2025-08-29T14:53:36.920372",
+    "first_seen": "2025-08-29T14:53:36.920372"
+  },
+  "2A:11:25:0F:BC:7C": {
+    "type": "BLE",
+    "signal_id": "2A:11:25:0F:BC:7C",
+    "name": "Unknown",
+    "rssi": -92,
+    "channel": null,
+    "last_seen": "2025-08-29T14:53:36.920372",
+    "first_seen": "2025-08-29T14:53:36.920372"
+  },
+  "75:1D:76:52:FE:36": {
+    "type": "BLE",
+    "signal_id": "75:1D:76:52:FE:36",
+    "name": "Unknown",
+    "rssi": -81,
+    "channel": null,
+    "last_seen": "2025-08-29T14:53:36.920372",
+    "first_seen": "2025-08-29T14:53:36.920372"
+  },
+  "71:04:17:81:B9:F3": {
+    "type": "BLE",
+    "signal_id": "71:04:17:81:B9:F3",
+    "name": "Unknown",
+    "rssi": -88,
+    "channel": null,
+    "last_seen": "2025-08-29T14:53:36.920372",
+    "first_seen": "2025-08-29T14:53:36.920372"
+  },
+  "45:9A:CB:7C:A8:B6": {
+    "type": "BLE",
+    "signal_id": "45:9A:CB:7C:A8:B6",
+    "name": "Unknown",
+    "rssi": -82,
+    "channel": null,
+    "last_seen": "2025-08-29T14:53:36.920372",
+    "first_seen": "2025-08-29T14:53:36.920372"
+  },
+  "70:B8:F6:3B:23:76": {
+    "type": "BLE",
+    "signal_id": "70:B8:F6:3B:23:76",
+    "name": "Vertuo_DV6_70B8F63B2376",
+    "rssi": -95,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T14:53:36.920372"
+  },
+  "9c:3d:cf:50:b0:ec": {
+    "type": "WiFi",
+    "signal_id": "9c:3d:cf:50:b0:ec",
+    "name": "ARLO_VMB_1587851816",
+    "rssi": -84,
+    "channel": 9,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "78:29:ed:ff:03:b9": {
+    "type": "WiFi",
+    "signal_id": "78:29:ed:ff:03:b9",
+    "name": "SpectrumSetup-BB",
+    "rssi": -87,
+    "channel": 6,
+    "last_seen": "2025-08-29T19:17:54.305176",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "bc:96:e5:ca:c9:2e": {
+    "type": "WiFi",
+    "signal_id": "bc:96:e5:ca:c9:2e",
+    "name": "SpectrumSetup-C92A",
+    "rssi": -69,
+    "channel": 1,
+    "last_seen": "2025-08-29T19:17:54.305176",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "5a:9b:4a:73:47:50": {
+    "type": "WiFi",
+    "signal_id": "5a:9b:4a:73:47:50",
+    "name": "j-u-ice",
+    "rssi": -58,
+    "channel": 37,
+    "last_seen": "2025-08-29T19:19:55.340238",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "57:7D:E3:EA:B9:3C": {
+    "type": "BLE",
+    "signal_id": "57:7D:E3:EA:B9:3C",
+    "name": "Unknown",
+    "rssi": -81,
+    "channel": null,
+    "last_seen": "2025-08-29T19:21:26.041578",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "54:D4:52:79:F5:44": {
+    "type": "BLE",
+    "signal_id": "54:D4:52:79:F5:44",
+    "name": "Unknown",
+    "rssi": -89,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "60:BB:14:8D:5C:64": {
+    "type": "BLE",
+    "signal_id": "60:BB:14:8D:5C:64",
+    "name": "Unknown",
+    "rssi": -88,
+    "channel": null,
+    "last_seen": "2025-08-29T19:21:26.041578",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "D0:60:CF:9C:C8:15": {
+    "type": "BLE",
+    "signal_id": "D0:60:CF:9C:C8:15",
+    "name": "Unknown",
+    "rssi": -97,
+    "channel": null,
+    "last_seen": "2025-08-29T19:16:38.763860",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "7A:47:65:32:EE:CB": {
+    "type": "BLE",
+    "signal_id": "7A:47:65:32:EE:CB",
+    "name": "Quest 3",
+    "rssi": -81,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "24:8F:41:E9:C9:8B": {
+    "type": "BLE",
+    "signal_id": "24:8F:41:E9:C9:8B",
+    "name": "Unknown",
+    "rssi": -78,
+    "channel": null,
+    "last_seen": "2025-08-29T19:19:55.340238",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "5E:AD:D0:F1:37:4B": {
+    "type": "BLE",
+    "signal_id": "5E:AD:D0:F1:37:4B",
+    "name": "Unknown",
+    "rssi": -76,
+    "channel": null,
+    "last_seen": "2025-08-29T19:18:24.557348",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "76:E3:9F:BF:E7:C2": {
+    "type": "BLE",
+    "signal_id": "76:E3:9F:BF:E7:C2",
+    "name": "mamaRoo5",
+    "rssi": -91,
+    "channel": null,
+    "last_seen": "2025-08-29T19:27:28.506790",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "C8:47:8C:40:74:4E": {
+    "type": "BLE",
+    "signal_id": "C8:47:8C:40:74:4E",
+    "name": "TY",
+    "rssi": -76,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "42:76:96:0E:13:AE": {
+    "type": "BLE",
+    "signal_id": "42:76:96:0E:13:AE",
+    "name": "Unknown",
+    "rssi": -96,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:59.125394",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "F4:60:77:D3:64:E9": {
+    "type": "BLE",
+    "signal_id": "F4:60:77:D3:64:E9",
+    "name": "Unknown",
+    "rssi": -98,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "48:3B:62:A7:C5:B7": {
+    "type": "BLE",
+    "signal_id": "48:3B:62:A7:C5:B7",
+    "name": "Unknown",
+    "rssi": -88,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "65:2D:E5:F5:75:6E": {
+    "type": "BLE",
+    "signal_id": "65:2D:E5:F5:75:6E",
+    "name": "Unknown",
+    "rssi": -86,
+    "channel": null,
+    "last_seen": "2025-08-29T19:21:26.041578",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "CD:03:22:75:B6:73": {
+    "type": "BLE",
+    "signal_id": "CD:03:22:75:B6:73",
+    "name": "Unknown",
+    "rssi": -67,
+    "channel": null,
+    "last_seen": "2025-08-29T19:16:38.763860",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "20:C4:26:7B:16:BD": {
+    "type": "BLE",
+    "signal_id": "20:C4:26:7B:16:BD",
+    "name": "Unknown",
+    "rssi": -96,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:59.125394",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "F0:B3:EC:65:D9:8F": {
+    "type": "BLE",
+    "signal_id": "F0:B3:EC:65:D9:8F",
+    "name": "Unknown",
+    "rssi": -98,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:43.994064",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "14:52:49:B4:5E:D6": {
+    "type": "BLE",
+    "signal_id": "14:52:49:B4:5E:D6",
+    "name": "Unknown",
+    "rssi": -88,
+    "channel": null,
+    "last_seen": "2025-08-29T19:21:26.041578",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "E0:5D:D2:FF:FF:57": {
+    "type": "BLE",
+    "signal_id": "E0:5D:D2:FF:FF:57",
+    "name": "Unknown",
+    "rssi": -88,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:43.994064",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "54:E9:C3:38:B0:7A": {
+    "type": "BLE",
+    "signal_id": "54:E9:C3:38:B0:7A",
+    "name": "Unknown",
+    "rssi": -96,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:59.125394",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "3A:C9:F1:20:7F:B1": {
+    "type": "BLE",
+    "signal_id": "3A:C9:F1:20:7F:B1",
+    "name": "Unknown",
+    "rssi": -86,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "4F:BA:34:C7:60:55": {
+    "type": "BLE",
+    "signal_id": "4F:BA:34:C7:60:55",
+    "name": "Unknown",
+    "rssi": -99,
+    "channel": null,
+    "last_seen": "2025-08-29T19:17:39.179814",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "7E:17:A0:21:14:E1": {
+    "type": "BLE",
+    "signal_id": "7E:17:A0:21:14:E1",
+    "name": "Unknown",
+    "rssi": -102,
+    "channel": null,
+    "last_seen": "2025-08-29T19:24:42.370791",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "4F:BF:74:8A:BE:64": {
+    "type": "BLE",
+    "signal_id": "4F:BF:74:8A:BE:64",
+    "name": "S45 4585 LE",
+    "rssi": -87,
+    "channel": null,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "5F:79:D1:BA:69:24": {
+    "type": "BLE",
+    "signal_id": "5F:79:D1:BA:69:24",
+    "name": "Unknown",
+    "rssi": -102,
+    "channel": null,
+    "last_seen": "2025-08-29T19:16:38.763860",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "25:61:D5:3C:8B:35": {
+    "type": "BLE",
+    "signal_id": "25:61:D5:3C:8B:35",
+    "name": "Unknown",
+    "rssi": -89,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "70:B8:F6:F4:73:EA": {
+    "type": "BLE",
+    "signal_id": "70:B8:F6:F4:73:EA",
+    "name": "Unknown",
+    "rssi": -99,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "CE:91:D4:73:EB:C9": {
+    "type": "BLE",
+    "signal_id": "CE:91:D4:73:EB:C9",
+    "name": "Unknown",
+    "rssi": -94,
+    "channel": null,
+    "last_seen": "2025-08-29T19:26:13.013940",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "52:64:9A:6D:29:C3": {
+    "type": "BLE",
+    "signal_id": "52:64:9A:6D:29:C3",
+    "name": "Unknown",
+    "rssi": -97,
+    "channel": null,
+    "last_seen": "2025-08-29T19:24:27.274188",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "D1:03:E8:DB:74:10": {
+    "type": "BLE",
+    "signal_id": "D1:03:E8:DB:74:10",
+    "name": "Unknown",
+    "rssi": -99,
+    "channel": null,
+    "last_seen": "2025-08-29T19:27:43.593638",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "F8:38:BB:EB:38:0D": {
+    "type": "BLE",
+    "signal_id": "F8:38:BB:EB:38:0D",
+    "name": "Unknown",
+    "rssi": -96,
+    "channel": null,
+    "last_seen": "2025-08-29T19:16:53.880581",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "25:5F:85:F2:00:FF": {
+    "type": "BLE",
+    "signal_id": "25:5F:85:F2:00:FF",
+    "name": "Unknown",
+    "rssi": -100,
+    "channel": null,
+    "last_seen": "2025-08-29T19:24:12.180675",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "F0:B3:EC:77:0B:F2": {
+    "type": "BLE",
+    "signal_id": "F0:B3:EC:77:0B:F2",
+    "name": "Unknown",
+    "rssi": -98,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "CC:4B:8D:13:D6:E9": {
+    "type": "BLE",
+    "signal_id": "CC:4B:8D:13:D6:E9",
+    "name": "Unknown",
+    "rssi": -94,
+    "channel": null,
+    "last_seen": "2025-08-29T19:23:57.099347",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "7C:23:13:36:2E:CB": {
+    "type": "BLE",
+    "signal_id": "7C:23:13:36:2E:CB",
+    "name": "Unknown",
+    "rssi": -94,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "4A:9D:F8:D5:E0:62": {
+    "type": "BLE",
+    "signal_id": "4A:9D:F8:D5:E0:62",
+    "name": "Unknown",
+    "rssi": -96,
+    "channel": null,
+    "last_seen": "2025-08-29T19:21:56.257728",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "F6:97:4E:C6:E4:0A": {
+    "type": "BLE",
+    "signal_id": "F6:97:4E:C6:E4:0A",
+    "name": "Unknown",
+    "rssi": -96,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:43.994064",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "71:DB:49:DE:A9:A4": {
+    "type": "BLE",
+    "signal_id": "71:DB:49:DE:A9:A4",
+    "name": "Unknown",
+    "rssi": -88,
+    "channel": null,
+    "last_seen": "2025-08-29T19:21:41.134635",
+    "first_seen": "2025-08-29T19:16:38.763860"
+  },
+  "5C:5E:F9:4D:D2:04": {
+    "type": "BLE",
+    "signal_id": "5C:5E:F9:4D:D2:04",
+    "name": "Unknown",
+    "rssi": -100,
+    "channel": null,
+    "last_seen": "2025-08-29T19:17:08.963133",
+    "first_seen": "2025-08-29T19:16:53.880581"
+  },
+  "F5:B7:88:D3:B7:AD": {
+    "type": "BLE",
+    "signal_id": "F5:B7:88:D3:B7:AD",
+    "name": "Unknown",
+    "rssi": -87,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:16:53.880581"
+  },
+  "0D:94:52:0E:7F:3C": {
+    "type": "BLE",
+    "signal_id": "0D:94:52:0E:7F:3C",
+    "name": "Unknown",
+    "rssi": -99,
+    "channel": null,
+    "last_seen": "2025-08-29T19:22:41.539617",
+    "first_seen": "2025-08-29T19:16:53.880581"
+  },
+  "5C:5F:25:E1:2F:1C": {
+    "type": "BLE",
+    "signal_id": "5C:5F:25:E1:2F:1C",
+    "name": "Unknown",
+    "rssi": -102,
+    "channel": null,
+    "last_seen": "2025-08-29T19:20:10.464805",
+    "first_seen": "2025-08-29T19:16:53.880581"
+  },
+  "F0:CF:53:4E:DE:49": {
+    "type": "BLE",
+    "signal_id": "F0:CF:53:4E:DE:49",
+    "name": "Unknown",
+    "rssi": -81,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:43.994064",
+    "first_seen": "2025-08-29T19:16:53.880581"
+  },
+  "47:4D:94:E9:C6:AF": {
+    "type": "BLE",
+    "signal_id": "47:4D:94:E9:C6:AF",
+    "name": "Unknown",
+    "rssi": -66,
+    "channel": null,
+    "last_seen": "2025-08-29T19:16:53.880581",
+    "first_seen": "2025-08-29T19:16:53.880581"
+  },
+  "10:2B:41:47:28:EB": {
+    "type": "BLE",
+    "signal_id": "10:2B:41:47:28:EB",
+    "name": "Unknown",
+    "rssi": -99,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:16:53.880581"
+  },
+  "52:64:DE:69:00:D9": {
+    "type": "BLE",
+    "signal_id": "52:64:DE:69:00:D9",
+    "name": "Unknown",
+    "rssi": -66,
+    "channel": null,
+    "last_seen": "2025-08-29T19:16:53.880581",
+    "first_seen": "2025-08-29T19:16:53.880581"
+  },
+  "50:54:7B:80:66:4B": {
+    "type": "BLE",
+    "signal_id": "50:54:7B:80:66:4B",
+    "name": "Unknown",
+    "rssi": -100,
+    "channel": null,
+    "last_seen": "2025-08-29T19:24:42.370791",
+    "first_seen": "2025-08-29T19:16:53.880581"
+  },
+  "E4:6A:18:6C:20:3C": {
+    "type": "BLE",
+    "signal_id": "E4:6A:18:6C:20:3C",
+    "name": "Unknown",
+    "rssi": -93,
+    "channel": null,
+    "last_seen": "2025-08-29T19:17:39.179814",
+    "first_seen": "2025-08-29T19:16:53.880581"
+  },
+  "F5:67:87:4E:E1:69": {
+    "type": "BLE",
+    "signal_id": "F5:67:87:4E:E1:69",
+    "name": "Unknown",
+    "rssi": -76,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:16:53.880581"
+  },
+  "40:A9:D2:A9:06:70": {
+    "type": "BLE",
+    "signal_id": "40:A9:D2:A9:06:70",
+    "name": "Unknown",
+    "rssi": -85,
+    "channel": null,
+    "last_seen": "2025-08-29T19:18:39.696929",
+    "first_seen": "2025-08-29T19:16:53.880581"
+  },
+  "6D:07:4A:D4:1D:62": {
+    "type": "BLE",
+    "signal_id": "6D:07:4A:D4:1D:62",
+    "name": "Unknown",
+    "rssi": -95,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:59.125394",
+    "first_seen": "2025-08-29T19:16:53.880581"
+  },
+  "5A:7D:B3:FE:64:A4": {
+    "type": "BLE",
+    "signal_id": "5A:7D:B3:FE:64:A4",
+    "name": "Unknown",
+    "rssi": -98,
+    "channel": null,
+    "last_seen": "2025-08-29T19:20:10.464805",
+    "first_seen": "2025-08-29T19:16:53.880581"
+  },
+  "7C:00:9E:0F:45:75": {
+    "type": "BLE",
+    "signal_id": "7C:00:9E:0F:45:75",
+    "name": "Unknown",
+    "rssi": -100,
+    "channel": null,
+    "last_seen": "2025-08-29T19:18:39.696929",
+    "first_seen": "2025-08-29T19:16:53.880581"
+  },
+  "C0:5D:89:A4:7A:4A": {
+    "type": "BLE",
+    "signal_id": "C0:5D:89:A4:7A:4A",
+    "name": "Haiku Fan",
+    "rssi": -105,
+    "channel": null,
+    "last_seen": "2025-08-29T19:26:43.183218",
+    "first_seen": "2025-08-29T19:17:08.963133"
+  },
+  "CC:A7:C1:31:07:30": {
+    "type": "BLE",
+    "signal_id": "CC:A7:C1:31:07:30",
+    "name": "N00AX",
+    "rssi": -87,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:17:08.963133"
+  },
+  "EB:4E:EE:04:27:EA": {
+    "type": "BLE",
+    "signal_id": "EB:4E:EE:04:27:EA",
+    "name": "Unknown",
+    "rssi": -66,
+    "channel": null,
+    "last_seen": "2025-08-29T19:17:54.305176",
+    "first_seen": "2025-08-29T19:17:08.963133"
+  },
+  "5C:49:7D:98:76:98": {
+    "type": "BLE",
+    "signal_id": "5C:49:7D:98:76:98",
+    "name": "Unknown",
+    "rssi": -99,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:59.125394",
+    "first_seen": "2025-08-29T19:17:08.963133"
+  },
+  "10:2B:41:63:5D:55": {
+    "type": "BLE",
+    "signal_id": "10:2B:41:63:5D:55",
+    "name": "Unknown",
+    "rssi": -101,
+    "channel": null,
+    "last_seen": "2025-08-29T19:17:08.963133",
+    "first_seen": "2025-08-29T19:17:08.963133"
+  },
+  "7D:2E:E9:BA:1F:84": {
+    "type": "BLE",
+    "signal_id": "7D:2E:E9:BA:1F:84",
+    "name": "LE-Electric Earmuffs",
+    "rssi": -100,
+    "channel": null,
+    "last_seen": "2025-08-29T19:17:08.963133",
+    "first_seen": "2025-08-29T19:17:08.963133"
+  },
+  "78:2B:64:4C:49:2D": {
+    "type": "BLE",
+    "signal_id": "78:2B:64:4C:49:2D",
+    "name": "LE-Bose Micro SoundLink",
+    "rssi": -84,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:17:08.963133"
+  },
+  "10:A1:68:AD:67:13": {
+    "type": "BLE",
+    "signal_id": "10:A1:68:AD:67:13",
+    "name": "Unknown",
+    "rssi": -97,
+    "channel": null,
+    "last_seen": "2025-08-29T19:27:13.385590",
+    "first_seen": "2025-08-29T19:17:24.070478"
+  },
+  "52:A7:39:FE:81:80": {
+    "type": "BLE",
+    "signal_id": "52:A7:39:FE:81:80",
+    "name": "Unknown",
+    "rssi": -95,
+    "channel": null,
+    "last_seen": "2025-08-29T19:17:24.070478",
+    "first_seen": "2025-08-29T19:17:24.070478"
+  },
+  "B4:60:77:D8:EA:64": {
+    "type": "BLE",
+    "signal_id": "B4:60:77:D8:EA:64",
+    "name": "Unknown",
+    "rssi": -102,
+    "channel": null,
+    "last_seen": "2025-08-29T19:22:56.633773",
+    "first_seen": "2025-08-29T19:17:24.070478"
+  },
+  "FD:8D:A4:C5:FF:7F": {
+    "type": "BLE",
+    "signal_id": "FD:8D:A4:C5:FF:7F",
+    "name": "Unknown",
+    "rssi": -89,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:59.125394",
+    "first_seen": "2025-08-29T19:17:24.070478"
+  },
+  "70:B6:09:F9:40:1B": {
+    "type": "BLE",
+    "signal_id": "70:B6:09:F9:40:1B",
+    "name": "Unknown",
+    "rssi": -79,
+    "channel": null,
+    "last_seen": "2025-08-29T19:20:40.686874",
+    "first_seen": "2025-08-29T19:17:24.070478"
+  },
+  "F0:7A:68:68:87:AC": {
+    "type": "BLE",
+    "signal_id": "F0:7A:68:68:87:AC",
+    "name": "Unknown",
+    "rssi": -98,
+    "channel": null,
+    "last_seen": "2025-08-29T19:20:40.686874",
+    "first_seen": "2025-08-29T19:17:39.179814"
+  },
+  "44:BB:3B:46:D3:AF": {
+    "type": "BLE",
+    "signal_id": "44:BB:3B:46:D3:AF",
+    "name": "N01MQ",
+    "rssi": -81,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:17:39.179814"
+  },
+  "D5:C5:EA:17:75:CE": {
+    "type": "BLE",
+    "signal_id": "D5:C5:EA:17:75:CE",
+    "name": "Unknown",
+    "rssi": -70,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:28.876128",
+    "first_seen": "2025-08-29T19:17:39.179814"
+  },
+  "64:16:66:A7:B9:8F": {
+    "type": "BLE",
+    "signal_id": "64:16:66:A7:B9:8F",
+    "name": "N01Z5",
+    "rssi": -91,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:43.994064",
+    "first_seen": "2025-08-29T19:17:39.179814"
+  },
+  "4F:F3:BC:AA:7A:D8": {
+    "type": "BLE",
+    "signal_id": "4F:F3:BC:AA:7A:D8",
+    "name": "LE-Electric Earmuffs",
+    "rssi": -95,
+    "channel": null,
+    "last_seen": "2025-08-29T19:17:39.179814",
+    "first_seen": "2025-08-29T19:17:39.179814"
+  },
+  "08:7b:12:50:d5:64": {
+    "type": "WiFi",
+    "signal_id": "08:7b:12:50:d5:64",
+    "name": "SpectrumSetup-5E",
+    "rssi": -83,
+    "channel": 11,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "80:ab:4d:92:53:84": {
+    "type": "WiFi",
+    "signal_id": "80:ab:4d:92:53:84",
+    "name": "Trash Compactor",
+    "rssi": -80,
+    "channel": 11,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "d0:fc:d0:e5:c4:e4": {
+    "type": "WiFi",
+    "signal_id": "d0:fc:d0:e5:c4:e4",
+    "name": "ATT2vu6YaV",
+    "rssi": -61,
+    "channel": 11,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "fc:ae:34:9f:2b:70": {
+    "type": "WiFi",
+    "signal_id": "fc:ae:34:9f:2b:70",
+    "name": "ATTeaViF5S",
+    "rssi": -81,
+    "channel": 8,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "a8:42:e3:cb:83:f9": {
+    "type": "WiFi",
+    "signal_id": "a8:42:e3:cb:83:f9",
+    "name": "Sims",
+    "rssi": -57,
+    "channel": 7,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "ec:c3:02:f4:5b:94": {
+    "type": "WiFi",
+    "signal_id": "ec:c3:02:f4:5b:94",
+    "name": "ATT2ACRJt4",
+    "rssi": -82,
+    "channel": 6,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "58:9b:4a:87:34:77": {
+    "type": "WiFi",
+    "signal_id": "58:9b:4a:87:34:77",
+    "name": "j-u-ice",
+    "rssi": -54,
+    "channel": 6,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "78:6a:1f:b4:16:60": {
+    "type": "WiFi",
+    "signal_id": "78:6a:1f:b4:16:60",
+    "name": "ATTBE7ETxi",
+    "rssi": -81,
+    "channel": 4,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "a0:55:1f:3c:bf:a1": {
+    "type": "WiFi",
+    "signal_id": "a0:55:1f:3c:bf:a1",
+    "name": "SpectrumSetup-BF9B",
+    "rssi": -56,
+    "channel": 6,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "7c:db:98:7b:5d:92": {
+    "type": "WiFi",
+    "signal_id": "7c:db:98:7b:5d:92",
+    "name": "Shweetumz",
+    "rssi": -66,
+    "channel": 1,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "2c:67:be:45:f4:dd": {
+    "type": "WiFi",
+    "signal_id": "2c:67:be:45:f4:dd",
+    "name": "ThisIsTheWay",
+    "rssi": -59,
+    "channel": 11,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "E7:07:1E:02:F3:95": {
+    "type": "BLE",
+    "signal_id": "E7:07:1E:02:F3:95",
+    "name": "NZKGU",
+    "rssi": -101,
+    "channel": null,
+    "last_seen": "2025-08-29T19:25:12.581622",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "F8:04:2E:DA:50:1F": {
+    "type": "BLE",
+    "signal_id": "F8:04:2E:DA:50:1F",
+    "name": "Unknown",
+    "rssi": -95,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:59.125394",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "39:66:57:D0:16:C2": {
+    "type": "BLE",
+    "signal_id": "39:66:57:D0:16:C2",
+    "name": "Unknown",
+    "rssi": -102,
+    "channel": null,
+    "last_seen": "2025-08-29T19:18:39.696929",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "6D:0F:CC:6D:DF:98": {
+    "type": "BLE",
+    "signal_id": "6D:0F:CC:6D:DF:98",
+    "name": "Unknown",
+    "rssi": -98,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:59.125394",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "62:FA:D2:7F:58:3B": {
+    "type": "BLE",
+    "signal_id": "62:FA:D2:7F:58:3B",
+    "name": "Unknown",
+    "rssi": -100,
+    "channel": null,
+    "last_seen": "2025-08-29T19:22:41.539617",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "59:05:07:B8:92:D1": {
+    "type": "BLE",
+    "signal_id": "59:05:07:B8:92:D1",
+    "name": "Unknown",
+    "rssi": -103,
+    "channel": null,
+    "last_seen": "2025-08-29T19:19:25.111764",
+    "first_seen": "2025-08-29T19:17:54.305176"
+  },
+  "32:87:ba:76:9a:4f": {
+    "type": "WiFi",
+    "signal_id": "32:87:ba:76:9a:4f",
+    "name": "DBAN_IoT",
+    "rssi": -89,
+    "channel": 40,
+    "last_seen": "2025-08-29T19:19:55.340238",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "2e:87:ba:76:9a:4f": {
+    "type": "WiFi",
+    "signal_id": "2e:87:ba:76:9a:4f",
+    "name": "Network type            : Infrastructure",
+    "rssi": -89,
+    "channel": 40,
+    "last_seen": "2025-08-29T19:19:55.340238",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "78:6a:1f:b4:16:63": {
+    "type": "WiFi",
+    "signal_id": "78:6a:1f:b4:16:63",
+    "name": "Network type            : Infrastructure",
+    "rssi": -84,
+    "channel": 153,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "d0:fc:d0:e5:c4:ef": {
+    "type": "WiFi",
+    "signal_id": "d0:fc:d0:e5:c4:ef",
+    "name": "Network type            : Infrastructure",
+    "rssi": -73,
+    "channel": 132,
+    "last_seen": "2025-08-29T19:19:55.340238",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "28:87:ba:76:9a:4f": {
+    "type": "WiFi",
+    "signal_id": "28:87:ba:76:9a:4f",
+    "name": "DBAN",
+    "rssi": -90,
+    "channel": 40,
+    "last_seen": "2025-08-29T19:19:55.340238",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "f8:9b:6e:ab:82:fc": {
+    "type": "WiFi",
+    "signal_id": "f8:9b:6e:ab:82:fc",
+    "name": "ATTeKEvDHE",
+    "rssi": -90,
+    "channel": 161,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "82:9c:25:67:75:04": {
+    "type": "WiFi",
+    "signal_id": "82:9c:25:67:75:04",
+    "name": "DamagedG00DS_5G",
+    "rssi": -80,
+    "channel": 161,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "d0:fc:d0:e5:c4:ec": {
+    "type": "WiFi",
+    "signal_id": "d0:fc:d0:e5:c4:ec",
+    "name": "ATT2vu6YaV",
+    "rssi": -77,
+    "channel": 132,
+    "last_seen": "2025-08-29T19:19:55.340238",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "d0:fc:d0:e5:c4:e8": {
+    "type": "WiFi",
+    "signal_id": "d0:fc:d0:e5:c4:e8",
+    "name": "ATT2vu6YaV",
+    "rssi": -77,
+    "channel": 52,
+    "last_seen": "2025-08-29T19:19:55.340238",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "58:9b:4a:87:34:76": {
+    "type": "WiFi",
+    "signal_id": "58:9b:4a:87:34:76",
+    "name": "j-u-ice",
+    "rssi": -56,
+    "channel": 44,
+    "last_seen": "2025-08-29T19:19:55.340238",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "a0:55:1f:3c:bf:a3": {
+    "type": "WiFi",
+    "signal_id": "a0:55:1f:3c:bf:a3",
+    "name": "SpectrumSetup-BF9B",
+    "rssi": -58,
+    "channel": 133,
+    "last_seen": "2025-08-29T19:19:55.340238",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "a0:55:1f:3c:bf:a2": {
+    "type": "WiFi",
+    "signal_id": "a0:55:1f:3c:bf:a2",
+    "name": "SpectrumSetup-BF9B",
+    "rssi": -67,
+    "channel": 157,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "c4:04:15:53:c3:b8": {
+    "type": "WiFi",
+    "signal_id": "c4:04:15:53:c3:b8",
+    "name": "fossy",
+    "rssi": -57,
+    "channel": 36,
+    "last_seen": "2025-08-29T19:19:55.340238",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "12:67:be:45:f4:d8": {
+    "type": "WiFi",
+    "signal_id": "12:67:be:45:f4:d8",
+    "name": "Spectrum Mobile",
+    "rssi": -75,
+    "channel": 44,
+    "last_seen": "2025-08-29T19:19:55.340238",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "1a:9b:4a:87:34:72": {
+    "type": "WiFi",
+    "signal_id": "1a:9b:4a:87:34:72",
+    "name": "Spectrum Mobile",
+    "rssi": -56,
+    "channel": 44,
+    "last_seen": "2025-08-29T19:19:55.340238",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "16:37:5f:95:8e:aa": {
+    "type": "WiFi",
+    "signal_id": "16:37:5f:95:8e:aa",
+    "name": "Spectrum Mobile",
+    "rssi": -89,
+    "channel": 157,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "0a:55:1f:3c:bf:a6": {
+    "type": "WiFi",
+    "signal_id": "0a:55:1f:3c:bf:a6",
+    "name": "Spectrum Mobile",
+    "rssi": -67,
+    "channel": 157,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "c6:95:00:7e:c7:2a": {
+    "type": "WiFi",
+    "signal_id": "c6:95:00:7e:c7:2a",
+    "name": "DIRECT-cD-FireTV_6e33",
+    "rssi": -65,
+    "channel": 157,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "74:37:5f:95:8e:aa": {
+    "type": "WiFi",
+    "signal_id": "74:37:5f:95:8e:aa",
+    "name": "SpectrumSetup-A9",
+    "rssi": -90,
+    "channel": 157,
+    "last_seen": "2025-08-29T19:19:40.245881",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "f8:9b:6e:2f:1a:28": {
+    "type": "WiFi",
+    "signal_id": "f8:9b:6e:2f:1a:28",
+    "name": "ATT3BmkGgs",
+    "rssi": -90,
+    "channel": 48,
+    "last_seen": "2025-08-29T19:19:55.340238",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "E1:AB:0C:7A:DE:E5": {
+    "type": "BLE",
+    "signal_id": "E1:AB:0C:7A:DE:E5",
+    "name": "Unknown",
+    "rssi": -82,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:18:09.423735"
+  },
+  "C4:68:5B:43:89:57": {
+    "type": "BLE",
+    "signal_id": "C4:68:5B:43:89:57",
+    "name": "Unknown",
+    "rssi": -101,
+    "channel": null,
+    "last_seen": "2025-08-29T19:18:24.557348",
+    "first_seen": "2025-08-29T19:18:24.557348"
+  },
+  "2C:99:75:0E:D9:73": {
+    "type": "BLE",
+    "signal_id": "2C:99:75:0E:D9:73",
+    "name": "Unknown",
+    "rssi": -102,
+    "channel": null,
+    "last_seen": "2025-08-29T19:27:58.684190",
+    "first_seen": "2025-08-29T19:18:24.557348"
+  },
+  "48:F1:0E:3A:21:7A": {
+    "type": "BLE",
+    "signal_id": "48:F1:0E:3A:21:7A",
+    "name": "Unknown",
+    "rssi": -93,
+    "channel": null,
+    "last_seen": "2025-08-29T19:18:39.696929",
+    "first_seen": "2025-08-29T19:18:39.696929"
+  },
+  "00:1F:FF:AD:1B:24": {
+    "type": "BLE",
+    "signal_id": "00:1F:FF:AD:1B:24",
+    "name": "PR BT F4EC",
+    "rssi": -95,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:28.876128",
+    "first_seen": "2025-08-29T19:18:39.696929"
+  },
+  "4E:96:B1:22:25:B3": {
+    "type": "BLE",
+    "signal_id": "4E:96:B1:22:25:B3",
+    "name": "Unknown",
+    "rssi": -87,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:18:39.696929"
+  },
+  "7C:17:01:81:B4:14": {
+    "type": "BLE",
+    "signal_id": "7C:17:01:81:B4:14",
+    "name": "Unknown",
+    "rssi": -85,
+    "channel": null,
+    "last_seen": "2025-08-29T19:21:26.041578",
+    "first_seen": "2025-08-29T19:18:39.696929"
+  },
+  "6D:D1:A6:C2:CE:05": {
+    "type": "BLE",
+    "signal_id": "6D:D1:A6:C2:CE:05",
+    "name": "Unknown",
+    "rssi": -86,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:18:39.696929"
+  },
+  "34:CD:B0:52:A6:29": {
+    "type": "BLE",
+    "signal_id": "34:CD:B0:52:A6:29",
+    "name": "ISE06B7AF",
+    "rssi": -100,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:43.994064",
+    "first_seen": "2025-08-29T19:18:39.696929"
+  },
+  "6C:4A:85:19:B3:45": {
+    "type": "BLE",
+    "signal_id": "6C:4A:85:19:B3:45",
+    "name": "Unknown",
+    "rssi": -106,
+    "channel": null,
+    "last_seen": "2025-08-29T19:18:54.828871",
+    "first_seen": "2025-08-29T19:18:54.828871"
+  },
+  "54:97:28:F9:AD:5D": {
+    "type": "BLE",
+    "signal_id": "54:97:28:F9:AD:5D",
+    "name": "Unknown",
+    "rssi": -102,
+    "channel": null,
+    "last_seen": "2025-08-29T19:24:57.462614",
+    "first_seen": "2025-08-29T19:18:54.828871"
+  },
+  "09:E7:16:27:7F:20": {
+    "type": "BLE",
+    "signal_id": "09:E7:16:27:7F:20",
+    "name": "Unknown",
+    "rssi": -99,
+    "channel": null,
+    "last_seen": "2025-08-29T19:22:41.539617",
+    "first_seen": "2025-08-29T19:19:09.960467"
+  },
+  "B4:CB:B8:A7:FF:5A": {
+    "type": "BLE",
+    "signal_id": "B4:CB:B8:A7:FF:5A",
+    "name": "Unknown",
+    "rssi": -70,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:28.876128",
+    "first_seen": "2025-08-29T19:19:40.245881"
+  },
+  "63:E5:E9:A9:EC:CF": {
+    "type": "BLE",
+    "signal_id": "63:E5:E9:A9:EC:CF",
+    "name": "Unknown",
+    "rssi": -99,
+    "channel": null,
+    "last_seen": "2025-08-29T19:27:58.684190",
+    "first_seen": "2025-08-29T19:19:55.340238"
+  },
+  "5F:AA:90:22:CB:D5": {
+    "type": "BLE",
+    "signal_id": "5F:AA:90:22:CB:D5",
+    "name": "S45 4585 LE",
+    "rssi": -89,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:20:10.464805"
+  },
+  "32:06:50:F5:CA:2A": {
+    "type": "BLE",
+    "signal_id": "32:06:50:F5:CA:2A",
+    "name": "Unknown",
+    "rssi": -78,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:20:10.464805"
+  },
+  "3A:1F:2B:BD:55:C5": {
+    "type": "BLE",
+    "signal_id": "3A:1F:2B:BD:55:C5",
+    "name": "Unknown",
+    "rssi": -100,
+    "channel": null,
+    "last_seen": "2025-08-29T19:20:10.464805",
+    "first_seen": "2025-08-29T19:20:10.464805"
+  },
+  "68:B9:4F:C8:5C:33": {
+    "type": "BLE",
+    "signal_id": "68:B9:4F:C8:5C:33",
+    "name": "Unknown",
+    "rssi": -100,
+    "channel": null,
+    "last_seen": "2025-08-29T19:20:55.813176",
+    "first_seen": "2025-08-29T19:20:40.686874"
+  },
+  "23:92:55:1C:AC:8A": {
+    "type": "BLE",
+    "signal_id": "23:92:55:1C:AC:8A",
+    "name": "Unknown",
+    "rssi": -102,
+    "channel": null,
+    "last_seen": "2025-08-29T19:24:12.180675",
+    "first_seen": "2025-08-29T19:20:40.686874"
+  },
+  "45:5E:7E:A8:6D:F8": {
+    "type": "BLE",
+    "signal_id": "45:5E:7E:A8:6D:F8",
+    "name": "Unknown",
+    "rssi": -100,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:43.994064",
+    "first_seen": "2025-08-29T19:20:40.686874"
+  },
+  "67:AC:F5:B6:E0:A1": {
+    "type": "BLE",
+    "signal_id": "67:AC:F5:B6:E0:A1",
+    "name": "Unknown",
+    "rssi": -99,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:43.994064",
+    "first_seen": "2025-08-29T19:20:55.813176"
+  },
+  "C0:2A:94:25:C4:54": {
+    "type": "BLE",
+    "signal_id": "C0:2A:94:25:C4:54",
+    "name": "Unknown",
+    "rssi": -97,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:43.994064",
+    "first_seen": "2025-08-29T19:20:55.813176"
+  },
+  "74:7B:A8:B0:2F:DC": {
+    "type": "BLE",
+    "signal_id": "74:7B:A8:B0:2F:DC",
+    "name": "Unknown",
+    "rssi": -104,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:21:10.940645"
+  },
+  "48:5F:8B:EF:69:7F": {
+    "type": "BLE",
+    "signal_id": "48:5F:8B:EF:69:7F",
+    "name": "Unknown",
+    "rssi": -81,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:21:41.134635"
+  },
+  "25:4B:B0:A8:E4:7A": {
+    "type": "BLE",
+    "signal_id": "25:4B:B0:A8:E4:7A",
+    "name": "Unknown",
+    "rssi": -87,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:21:41.134635"
+  },
+  "7E:F9:E5:96:9B:65": {
+    "type": "BLE",
+    "signal_id": "7E:F9:E5:96:9B:65",
+    "name": "Unknown",
+    "rssi": -88,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:21:41.134635"
+  },
+  "3A:EA:89:BF:87:91": {
+    "type": "BLE",
+    "signal_id": "3A:EA:89:BF:87:91",
+    "name": "Unknown",
+    "rssi": -100,
+    "channel": null,
+    "last_seen": "2025-08-29T19:21:41.134635",
+    "first_seen": "2025-08-29T19:21:41.134635"
+  },
+  "6F:84:F8:D0:F7:36": {
+    "type": "BLE",
+    "signal_id": "6F:84:F8:D0:F7:36",
+    "name": "Unknown",
+    "rssi": -86,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:21:56.257728"
+  },
+  "7F:5B:5A:EE:CE:33": {
+    "type": "BLE",
+    "signal_id": "7F:5B:5A:EE:CE:33",
+    "name": "Unknown",
+    "rssi": -101,
+    "channel": null,
+    "last_seen": "2025-08-29T19:21:56.257728",
+    "first_seen": "2025-08-29T19:21:56.257728"
+  },
+  "65:DC:9B:7D:1B:94": {
+    "type": "BLE",
+    "signal_id": "65:DC:9B:7D:1B:94",
+    "name": "Unknown",
+    "rssi": -82,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:21:56.257728"
+  },
+  "CC:32:32:36:22:2B": {
+    "type": "BLE",
+    "signal_id": "CC:32:32:36:22:2B",
+    "name": "Govee_H6055_222B",
+    "rssi": -97,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:21:56.257728"
+  },
+  "61:21:D1:64:B1:96": {
+    "type": "BLE",
+    "signal_id": "61:21:D1:64:B1:96",
+    "name": "Unknown",
+    "rssi": -79,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:22:11.340842"
+  },
+  "4C:32:37:51:B1:50": {
+    "type": "BLE",
+    "signal_id": "4C:32:37:51:B1:50",
+    "name": "Unknown",
+    "rssi": -95,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:22:11.340842"
+  },
+  "BE:27:ED:00:07:03": {
+    "type": "BLE",
+    "signal_id": "BE:27:ED:00:07:03",
+    "name": "ELK-BLEDOM       ",
+    "rssi": -99,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:43.994064",
+    "first_seen": "2025-08-29T19:22:11.340842"
+  },
+  "FF:AF:5D:37:7D:FB": {
+    "type": "BLE",
+    "signal_id": "FF:AF:5D:37:7D:FB",
+    "name": "Unknown",
+    "rssi": -95,
+    "channel": null,
+    "last_seen": "2025-08-29T19:22:26.434104",
+    "first_seen": "2025-08-29T19:22:26.434104"
+  },
+  "36:F1:29:AD:F1:89": {
+    "type": "BLE",
+    "signal_id": "36:F1:29:AD:F1:89",
+    "name": "Unknown",
+    "rssi": -97,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:59.125394",
+    "first_seen": "2025-08-29T19:22:56.633773"
+  },
+  "E3:78:6A:98:94:C9": {
+    "type": "BLE",
+    "signal_id": "E3:78:6A:98:94:C9",
+    "name": "Unknown",
+    "rssi": -99,
+    "channel": null,
+    "last_seen": "2025-08-29T19:23:26.870615",
+    "first_seen": "2025-08-29T19:23:26.870615"
+  },
+  "D2:AC:8C:18:A5:99": {
+    "type": "BLE",
+    "signal_id": "D2:AC:8C:18:A5:99",
+    "name": "Unknown",
+    "rssi": -95,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:13.761805",
+    "first_seen": "2025-08-29T19:23:41.980583"
+  },
+  "4E:93:5A:A9:FD:47": {
+    "type": "BLE",
+    "signal_id": "4E:93:5A:A9:FD:47",
+    "name": "Unknown",
+    "rssi": -103,
+    "channel": null,
+    "last_seen": "2025-08-29T19:23:41.980583",
+    "first_seen": "2025-08-29T19:23:41.980583"
+  },
+  "7B:93:09:6C:6F:E7": {
+    "type": "BLE",
+    "signal_id": "7B:93:09:6C:6F:E7",
+    "name": "Unknown",
+    "rssi": -99,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:13.761805",
+    "first_seen": "2025-08-29T19:23:57.099347"
+  },
+  "E1:70:34:87:B2:A2": {
+    "type": "BLE",
+    "signal_id": "E1:70:34:87:B2:A2",
+    "name": "Unknown",
+    "rssi": -96,
+    "channel": null,
+    "last_seen": "2025-08-29T19:24:57.462614",
+    "first_seen": "2025-08-29T19:24:12.180675"
+  },
+  "7B:76:0B:C5:3B:4D": {
+    "type": "BLE",
+    "signal_id": "7B:76:0B:C5:3B:4D",
+    "name": "Unknown",
+    "rssi": -98,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:24:42.370791"
+  },
+  "DA:C9:C5:15:6E:9B": {
+    "type": "BLE",
+    "signal_id": "DA:C9:C5:15:6E:9B",
+    "name": "Unknown",
+    "rssi": -96,
+    "channel": null,
+    "last_seen": "2025-08-29T19:24:42.370791",
+    "first_seen": "2025-08-29T19:24:42.370791"
+  },
+  "7A:08:FE:B7:DB:EB": {
+    "type": "BLE",
+    "signal_id": "7A:08:FE:B7:DB:EB",
+    "name": "Unknown",
+    "rssi": -100,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:43.994064",
+    "first_seen": "2025-08-29T19:24:57.462614"
+  },
+  "40:DA:66:B7:3D:40": {
+    "type": "BLE",
+    "signal_id": "40:DA:66:B7:3D:40",
+    "name": "Unknown",
+    "rssi": -101,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:43.994064",
+    "first_seen": "2025-08-29T19:25:12.581622"
+  },
+  "22:36:8A:61:9D:78": {
+    "type": "BLE",
+    "signal_id": "22:36:8A:61:9D:78",
+    "name": "Unknown",
+    "rssi": -99,
+    "channel": null,
+    "last_seen": "2025-08-29T19:26:58.291598",
+    "first_seen": "2025-08-29T19:25:27.690088"
+  },
+  "0C:D1:84:13:86:17": {
+    "type": "BLE",
+    "signal_id": "0C:D1:84:13:86:17",
+    "name": "Unknown",
+    "rssi": -99,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:43.994064",
+    "first_seen": "2025-08-29T19:25:27.690088"
+  },
+  "55:8F:C2:D9:5D:4E": {
+    "type": "BLE",
+    "signal_id": "55:8F:C2:D9:5D:4E",
+    "name": "Unknown",
+    "rssi": -101,
+    "channel": null,
+    "last_seen": "2025-08-29T19:26:28.094180",
+    "first_seen": "2025-08-29T19:25:42.816071"
+  },
+  "E2:B0:F7:7E:DB:41": {
+    "type": "BLE",
+    "signal_id": "E2:B0:F7:7E:DB:41",
+    "name": "Unknown",
+    "rssi": -94,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:25:57.921551"
+  },
+  "4E:8A:34:57:12:67": {
+    "type": "BLE",
+    "signal_id": "4E:8A:34:57:12:67",
+    "name": "Unknown",
+    "rssi": -102,
+    "channel": null,
+    "last_seen": "2025-08-29T19:26:43.183218",
+    "first_seen": "2025-08-29T19:26:13.013940"
+  },
+  "84:bb:69:e8:85:b3": {
+    "type": "WiFi",
+    "signal_id": "84:bb:69:e8:85:b3",
+    "name": "Network type            : Infrastructure",
+    "rssi": -55,
+    "channel": 153,
+    "last_seen": "2025-08-29T19:28:59.125394",
+    "first_seen": "2025-08-29T19:27:13.385590"
+  },
+  "36:5e:08:5d:8f:d1": {
+    "type": "WiFi",
+    "signal_id": "36:5e:08:5d:8f:d1",
+    "name": "Network type            : Infrastructure",
+    "rssi": -56,
+    "channel": 6,
+    "last_seen": "2025-08-29T19:28:59.125394",
+    "first_seen": "2025-08-29T19:27:13.385590"
+  },
+  "84:bb:69:e8:85:b0": {
+    "type": "WiFi",
+    "signal_id": "84:bb:69:e8:85:b0",
+    "name": "ATT8ePb7xg",
+    "rssi": -54,
+    "channel": 9,
+    "last_seen": "2025-08-29T19:28:59.125394",
+    "first_seen": "2025-08-29T19:27:13.385590"
+  },
+  "bc:9a:8e:8b:ed:44": {
+    "type": "WiFi",
+    "signal_id": "bc:9a:8e:8b:ed:44",
+    "name": "Pierre's Palace",
+    "rssi": -83,
+    "channel": 1,
+    "last_seen": "2025-08-29T19:28:59.125394",
+    "first_seen": "2025-08-29T19:27:13.385590"
+  },
+  "27:4E:87:2B:7E:F2": {
+    "type": "BLE",
+    "signal_id": "27:4E:87:2B:7E:F2",
+    "name": "Unknown",
+    "rssi": -97,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:27:13.385590"
+  },
+  "63:34:30:62:9A:A2": {
+    "type": "BLE",
+    "signal_id": "63:34:30:62:9A:A2",
+    "name": "Unknown",
+    "rssi": -89,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:27:43.593638"
+  },
+  "67:48:4D:29:03:B9": {
+    "type": "BLE",
+    "signal_id": "67:48:4D:29:03:B9",
+    "name": "mamaRoo5",
+    "rssi": -97,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:27:43.593638"
+  },
+  "1D:06:2E:D3:27:2C": {
+    "type": "BLE",
+    "signal_id": "1D:06:2E:D3:27:2C",
+    "name": "Unknown",
+    "rssi": -100,
+    "channel": null,
+    "last_seen": "2025-08-29T19:28:59.125394",
+    "first_seen": "2025-08-29T19:27:43.593638"
+  },
+  "20:F1:6C:88:70:5F": {
+    "type": "BLE",
+    "signal_id": "20:F1:6C:88:70:5F",
+    "name": "Unknown",
+    "rssi": -95,
+    "channel": null,
+    "last_seen": "2025-08-29T19:29:14.213336",
+    "first_seen": "2025-08-29T19:28:13.761805"
+  }
+}

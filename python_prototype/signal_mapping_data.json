@@ -1,0 +1,653 @@
+{
+  "signal_data": [
+    {
+      "timestamp": "2025-08-20T20:28:18.098603",
+      "location": {
+        "latitude": 40.7128,
+        "longitude": -74.006,
+        "timestamp": "2025-08-20T20:28:18.098603"
+      },
+      "wifi_networks": [
+        {
+          "ssid": "TestNetwork1",
+          "bssid": "aa:bb:cc:dd:ee:01",
+          "signal_strength": -50
+        },
+        {
+          "ssid": "TestNetwork2",
+          "bssid": "aa:bb:cc:dd:ee:02",
+          "signal_strength": -60
+        }
+      ],
+      "bluetooth_devices": [
+        {
+          "name": "TestDevice1",
+          "address": "11:22:33:44:55:01",
+          "rssi": -40
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-08-20T20:28:18.098603",
+      "location": {
+        "latitude": 40.712900000000005,
+        "longitude": -74.0059,
+        "timestamp": "2025-08-20T20:28:18.098603"
+      },
+      "wifi_networks": [
+        {
+          "ssid": "TestNetwork1",
+          "bssid": "aa:bb:cc:dd:ee:01",
+          "signal_strength": -52
+        },
+        {
+          "ssid": "TestNetwork2",
+          "bssid": "aa:bb:cc:dd:ee:02",
+          "signal_strength": -63
+        }
+      ],
+      "bluetooth_devices": [
+        {
+          "name": "TestDevice1",
+          "address": "11:22:33:44:55:01",
+          "rssi": -42
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-08-20T20:28:18.098603",
+      "location": {
+        "latitude": 40.713,
+        "longitude": -74.0058,
+        "timestamp": "2025-08-20T20:28:18.098603"
+      },
+      "wifi_networks": [
+        {
+          "ssid": "TestNetwork1",
+          "bssid": "aa:bb:cc:dd:ee:01",
+          "signal_strength": -54
+        },
+        {
+          "ssid": "TestNetwork2",
+          "bssid": "aa:bb:cc:dd:ee:02",
+          "signal_strength": -66
+        }
+      ],
+      "bluetooth_devices": [
+        {
+          "name": "TestDevice1",
+          "address": "11:22:33:44:55:01",
+          "rssi": -44
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-08-20T20:28:18.098603",
+      "location": {
+        "latitude": 40.713100000000004,
+        "longitude": -74.0057,
+        "timestamp": "2025-08-20T20:28:18.098603"
+      },
+      "wifi_networks": [
+        {
+          "ssid": "TestNetwork1",
+          "bssid": "aa:bb:cc:dd:ee:01",
+          "signal_strength": -56
+        },
+        {
+          "ssid": "TestNetwork2",
+          "bssid": "aa:bb:cc:dd:ee:02",
+          "signal_strength": -69
+        }
+      ],
+      "bluetooth_devices": [
+        {
+          "name": "TestDevice1",
+          "address": "11:22:33:44:55:01",
+          "rssi": -46
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-08-20T20:28:18.098603",
+      "location": {
+        "latitude": 40.7132,
+        "longitude": -74.0056,
+        "timestamp": "2025-08-20T20:28:18.098603"
+      },
+      "wifi_networks": [
+        {
+          "ssid": "TestNetwork1",
+          "bssid": "aa:bb:cc:dd:ee:01",
+          "signal_strength": -58
+        },
+        {
+          "ssid": "TestNetwork2",
+          "bssid": "aa:bb:cc:dd:ee:02",
+          "signal_strength": -72
+        }
+      ],
+      "bluetooth_devices": [
+        {
+          "name": "TestDevice1",
+          "address": "11:22:33:44:55:01",
+          "rssi": -48
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-08-20T20:28:18.098603",
+      "location": {
+        "latitude": 40.713300000000004,
+        "longitude": -74.0055,
+        "timestamp": "2025-08-20T20:28:18.098603"
+      },
+      "wifi_networks": [
+        {
+          "ssid": "TestNetwork1",
+          "bssid": "aa:bb:cc:dd:ee:01",
+          "signal_strength": -60
+        },
+        {
+          "ssid": "TestNetwork2",
+          "bssid": "aa:bb:cc:dd:ee:02",
+          "signal_strength": -75
+        }
+      ],
+      "bluetooth_devices": [
+        {
+          "name": "TestDevice1",
+          "address": "11:22:33:44:55:01",
+          "rssi": -50
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-08-20T20:28:18.098603",
+      "location": {
+        "latitude": 40.7134,
+        "longitude": -74.0054,
+        "timestamp": "2025-08-20T20:28:18.098603"
+      },
+      "wifi_networks": [
+        {
+          "ssid": "TestNetwork1",
+          "bssid": "aa:bb:cc:dd:ee:01",
+          "signal_strength": -62
+        },
+        {
+          "ssid": "TestNetwork2",
+          "bssid": "aa:bb:cc:dd:ee:02",
+          "signal_strength": -78
+        }
+      ],
+      "bluetooth_devices": [
+        {
+          "name": "TestDevice1",
+          "address": "11:22:33:44:55:01",
+          "rssi": -52
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-08-20T20:28:18.098603",
+      "location": {
+        "latitude": 40.7135,
+        "longitude": -74.0053,
+        "timestamp": "2025-08-20T20:28:18.098603"
+      },
+      "wifi_networks": [
+        {
+          "ssid": "TestNetwork1",
+          "bssid": "aa:bb:cc:dd:ee:01",
+          "signal_strength": -64
+        },
+        {
+          "ssid": "TestNetwork2",
+          "bssid": "aa:bb:cc:dd:ee:02",
+          "signal_strength": -81
+        }
+      ],
+      "bluetooth_devices": [
+        {
+          "name": "TestDevice1",
+          "address": "11:22:33:44:55:01",
+          "rssi": -54
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-08-20T20:28:18.098603",
+      "location": {
+        "latitude": 40.7136,
+        "longitude": -74.0052,
+        "timestamp": "2025-08-20T20:28:18.098603"
+      },
+      "wifi_networks": [
+        {
+          "ssid": "TestNetwork1",
+          "bssid": "aa:bb:cc:dd:ee:01",
+          "signal_strength": -66
+        },
+        {
+          "ssid": "TestNetwork2",
+          "bssid": "aa:bb:cc:dd:ee:02",
+          "signal_strength": -84
+        }
+      ],
+      "bluetooth_devices": [
+        {
+          "name": "TestDevice1",
+          "address": "11:22:33:44:55:01",
+          "rssi": -56
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-08-20T20:28:18.098603",
+      "location": {
+        "latitude": 40.7137,
+        "longitude": -74.0051,
+        "timestamp": "2025-08-20T20:28:18.098603"
+      },
+      "wifi_networks": [
+        {
+          "ssid": "TestNetwork1",
+          "bssid": "aa:bb:cc:dd:ee:01",
+          "signal_strength": -68
+        },
+        {
+          "ssid": "TestNetwork2",
+          "bssid": "aa:bb:cc:dd:ee:02",
+          "signal_strength": -87
+        }
+      ],
+      "bluetooth_devices": [
+        {
+          "name": "TestDevice1",
+          "address": "11:22:33:44:55:01",
+          "rssi": -58
+        }
+      ]
+    }
+  ],
+  "wifi_heatmap": {
+    "aa:bb:cc:dd:ee:01": {
+      "40.7128,-74.006": [
+        {
+          "signal": -50,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7128,
+            "longitude": -74.006,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7129,-74.0059": [
+        {
+          "signal": -52,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.712900000000005,
+            "longitude": -74.0059,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.713,-74.0058": [
+        {
+          "signal": -54,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.713,
+            "longitude": -74.0058,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7131,-74.0057": [
+        {
+          "signal": -56,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.713100000000004,
+            "longitude": -74.0057,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7132,-74.0056": [
+        {
+          "signal": -58,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7132,
+            "longitude": -74.0056,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7133,-74.0055": [
+        {
+          "signal": -60,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.713300000000004,
+            "longitude": -74.0055,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7134,-74.0054": [
+        {
+          "signal": -62,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7134,
+            "longitude": -74.0054,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7135,-74.0053": [
+        {
+          "signal": -64,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7135,
+            "longitude": -74.0053,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7136,-74.0052": [
+        {
+          "signal": -66,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7136,
+            "longitude": -74.0052,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7137,-74.0051": [
+        {
+          "signal": -68,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7137,
+            "longitude": -74.0051,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ]
+    },
+    "aa:bb:cc:dd:ee:02": {
+      "40.7128,-74.006": [
+        {
+          "signal": -60,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7128,
+            "longitude": -74.006,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7129,-74.0059": [
+        {
+          "signal": -63,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.712900000000005,
+            "longitude": -74.0059,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.713,-74.0058": [
+        {
+          "signal": -66,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.713,
+            "longitude": -74.0058,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7131,-74.0057": [
+        {
+          "signal": -69,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.713100000000004,
+            "longitude": -74.0057,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7132,-74.0056": [
+        {
+          "signal": -72,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7132,
+            "longitude": -74.0056,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7133,-74.0055": [
+        {
+          "signal": -75,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.713300000000004,
+            "longitude": -74.0055,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7134,-74.0054": [
+        {
+          "signal": -78,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7134,
+            "longitude": -74.0054,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7135,-74.0053": [
+        {
+          "signal": -81,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7135,
+            "longitude": -74.0053,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7136,-74.0052": [
+        {
+          "signal": -84,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7136,
+            "longitude": -74.0052,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7137,-74.0051": [
+        {
+          "signal": -87,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7137,
+            "longitude": -74.0051,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ]
+    }
+  },
+  "bluetooth_heatmap": {
+    "11:22:33:44:55:01": {
+      "40.7128,-74.006": [
+        {
+          "signal": -40,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7128,
+            "longitude": -74.006,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7129,-74.0059": [
+        {
+          "signal": -42,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.712900000000005,
+            "longitude": -74.0059,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.713,-74.0058": [
+        {
+          "signal": -44,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.713,
+            "longitude": -74.0058,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7131,-74.0057": [
+        {
+          "signal": -46,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.713100000000004,
+            "longitude": -74.0057,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7132,-74.0056": [
+        {
+          "signal": -48,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7132,
+            "longitude": -74.0056,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7133,-74.0055": [
+        {
+          "signal": -50,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.713300000000004,
+            "longitude": -74.0055,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7134,-74.0054": [
+        {
+          "signal": -52,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7134,
+            "longitude": -74.0054,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7135,-74.0053": [
+        {
+          "signal": -54,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7135,
+            "longitude": -74.0053,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7136,-74.0052": [
+        {
+          "signal": -56,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7136,
+            "longitude": -74.0052,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ],
+      "40.7137,-74.0051": [
+        {
+          "signal": -58,
+          "timestamp": "2025-08-20T20:28:18.098603",
+          "location": {
+            "latitude": 40.7137,
+            "longitude": -74.0051,
+            "timestamp": "2025-08-20T20:28:18.098603"
+          }
+        }
+      ]
+    }
+  },
+  "wifi_analysis": {
+    "total_networks": 2,
+    "total_locations": 10,
+    "total_readings": 10,
+    "network_stats": {
+      "aa:bb:cc:dd:ee:01": {
+        "locations_count": 10,
+        "readings_count": 10,
+        "avg_signal": -59.0,
+        "min_signal": -68,
+        "max_signal": -50,
+        "signal_range": 18
+      },
+      "aa:bb:cc:dd:ee:02": {
+        "locations_count": 10,
+        "readings_count": 10,
+        "avg_signal": -73.5,
+        "min_signal": -87,
+        "max_signal": -60,
+        "signal_range": 27
+      }
+    }
+  },
+  "bluetooth_analysis": {
+    "total_networks": 1,
+    "total_locations": 10,
+    "total_readings": 10,
+    "network_stats": {
+      "11:22:33:44:55:01": {
+        "locations_count": 10,
+        "readings_count": 10,
+        "avg_signal": -49.0,
+        "min_signal": -58,
+        "max_signal": -40,
+        "signal_range": 18
+      }
+    }
+  },
+  "export_timestamp": "2025-08-20T20:28:18.102182"
+}

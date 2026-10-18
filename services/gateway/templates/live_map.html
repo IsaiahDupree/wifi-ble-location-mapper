@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RF Mapper - Live Signal Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.css" />
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        #map { height: 100vh; width: 100%; }
+        .controls {
+            position: absolute; top: 10px; right: 10px; z-index: 1000;
+            background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .controls h3 { margin: 0 0 10px 0; font-size: 16px; }
+        .controls label { display: block; margin: 5px 0; cursor: pointer; }
+        .controls input[type="checkbox"] { margin-right: 8px; }
+        .status { 
+            position: absolute; bottom: 10px; left: 10px; z-index: 1000;
+            background: rgba(0,0,0,0.8); color: white; padding: 10px; border-radius: 5px;
+            font-size: 12px; max-width: 300px;
+        }
+        .legend {
+            position: absolute; bottom: 10px; right: 10px; z-index: 1000;
+            background: white; padding: 10px; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            font-size: 12px;
+        }
+        .legend-item { display: flex; align-items: center; margin: 3px 0; }
+        .legend-color { width: 12px; height: 12px; margin-right: 8px; border-radius: 50%; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    
+    <div class="controls">
+        <h3>Location Input</h3>
+        <button id="get-location" onclick="getCurrentLocation()">📍 Use My Location</button>
+        <div style="margin: 10px 0;">
+            <input type="number" id="lat-input" placeholder="Latitude" step="any" style="width: 100px;">
+            <input type="number" id="lon-input" placeholder="Longitude" step="any" style="width: 100px;">
+            <button onclick="setManualLocation()">Set</button>
+        </div>
+        <div id="current-location" style="font-size: 11px; color: #666;"></div>
+        
+        <hr>
+        <h3>Signal Filters</h3>
+        <label><input type="checkbox" id="show-wifi" checked> WiFi Networks</label>
+        <label><input type="checkbox" id="show-ble" checked> Bluetooth Devices</label>
+        <label><input type="checkbox" id="show-heatmap" checked> Heat Map</label>
+        <label><input type="checkbox" id="show-points" checked> Individual Points</label>
+        <hr>
+        <div>Total Observations: <span id="obs-count">0</span></div>
+        <div>WiFi: <span id="wifi-count">0</span> | BLE: <span id="ble-count">0</span></div>
+    </div>
+    
+    <div class="status" id="status">
+        Connecting to live stream...
+    </div>
+    
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color" style="background: #ff6b6b;"></div>
+            <span>WiFi Networks</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #4ecdc4;"></div>
+            <span>Bluetooth Devices</span>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+    <script>
+        // Initialize map
+        const map = L.map('map').setView([40.7128, -74.0060], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Data storage
+        let observations = [];
+        let wifiLayer = L.layerGroup().addTo(map);
+        let bleLayer = L.layerGroup().addTo(map);
+        let heatmapLayer = null;
+        let pointsLayer = L.layerGroup().addTo(map);
+
+        // WebSocket connection
+        const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+        const wsUrl = `${protocol}//${window.location.host}/stream`;
+        let ws = null;
+        let reconnectInterval = null;
+
+        function connectWebSocket() {
+            ws = new WebSocket(wsUrl);
+            
+            ws.onopen = function() {
+                updateStatus('Connected - receiving live data', 'green');
+                if (reconnectInterval) {
+                    clearInterval(reconnectInterval);
+                    reconnectInterval = null;
+                }
+            };
+            
+            ws.onmessage = function(event) {
+                try {
+                    const message = JSON.parse(event.data);
+                    if (message.type === 'observation') {
+                        addObservation(message.data);
+                    }
+                } catch (e) {
+                    console.error('Error parsing WebSocket message:', e);
+                }
+            };
+            
+            ws.onclose = function() {
+                updateStatus('Connection lost - attempting to reconnect...', 'orange');
+                if (!reconnectInterval) {
+                    reconnectInterval = setInterval(connectWebSocket, 5000);
+                }
+            };
+            
+            ws.onerror = function(error) {
+                updateStatus('Connection error', 'red');
+                console.error('WebSocket error:', error);
+            };
+        }
+
+        function updateStatus(message, color = 'white') {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.style.backgroundColor = color === 'green' ? 'rgba(0,128,0,0.8)' : 
+                                         color === 'orange' ? 'rgba(255,165,0,0.8)' : 
+                                         color === 'red' ? 'rgba(255,0,0,0.8)' : 'rgba(0,0,0,0.8)';
+        }
+
+        function addObservation(obs) {
+            observations.push(obs);
+            
+            // Keep only last 1000 observations for performance
+            if (observations.length > 1000) {
+                observations = observations.slice(-1000);
+            }
+            
+            updateMap();
+            updateCounts();
+        }
+
+        function updateMap() {
+            // Clear existing layers
+            wifiLayer.clearLayers();
+            bleLayer.clearLayers();
+            pointsLayer.clearLayers();
+            if (heatmapLayer) {
+                map.removeLayer(heatmapLayer);
+            }
+
+            const showWifi = document.getElementById('show-wifi').checked;
+            const showBle = document.getElementById('show-ble').checked;
+            const showHeatmap = document.getElementById('show-heatmap').checked;
+            const showPoints = document.getElementById('show-points').checked;
+
+            // Prepare data for heatmap
+            const heatData = [];
+            
+            observations.forEach(obs => {
+                const loc = obs.observer_location;
+                if (!loc || !loc.lat || !loc.lon) return;
+                
+                const lat = loc.lat;
+                const lon = loc.lon;
+                const rssi = obs.rssi_dbm;
+                
+                // Convert RSSI to heat intensity (0-1)
+                const intensity = Math.max(0, (rssi + 100) / 60); // -100 to -40 dBm range
+                heatData.push([lat, lon, intensity]);
+                
+                // Add individual points
+                if (showPoints) {
+                    const color = obs.radio === 'wifi' ? '#ff6b6b' : '#4ecdc4';
+                    const radius = Math.max(3, (rssi + 100) / 10); // Size based on signal strength
+                    
+                    const marker = L.circleMarker([lat, lon], {
+                        color: color,
+                        fillColor: color,
+                        fillOpacity: 0.6,
+                        radius: radius,
+                        weight: 1
+                    });
+                    
+                    // Popup with details
+                    const popupContent = `
+                        <strong>${obs.radio.toUpperCase()}</strong><br>
+                        Signal: ${obs.signal_id}<br>
+                        ${obs.ssid ? `SSID: ${obs.ssid}<br>` : ''}
+                        ${obs.device_name ? `Name: ${obs.device_name}<br>` : ''}
+                        RSSI: ${obs.rssi_dbm} dBm<br>
+                        ${obs.channel ? `Channel: ${obs.channel}<br>` : ''}
+                        Time: ${new Date(obs.ts).toLocaleTimeString()}
+                    `;
+                    marker.bindPopup(popupContent);
+                    
+                    if (obs.radio === 'wifi' && showWifi) {
+                        wifiLayer.addLayer(marker);
+                    } else if (obs.radio === 'ble' && showBle) {
+                        bleLayer.addLayer(marker);
+                    }
+                }
+            });
+
+            // Add heatmap
+            if (showHeatmap && heatData.length > 0) {
+                heatmapLayer = L.heatLayer(heatData, {
+                    radius: 25,
+                    blur: 15,
+                    maxZoom: 17,
+                    gradient: {
+                        0.0: 'blue',
+                        0.3: 'cyan',
+                        0.5: 'lime',
+                        0.7: 'yellow',
+                        1.0: 'red'
+                    }
+                }).addTo(map);
+            }
+
+            // Auto-fit map to data if we have observations
+            if (observations.length > 0) {
+                const lats = observations.map(o => o.observer_location?.lat).filter(Boolean);
+                const lons = observations.map(o => o.observer_location?.lon).filter(Boolean);
+                
+                if (lats.length > 0 && lons.length > 0) {
+                    const bounds = L.latLngBounds(
+                        [Math.min(...lats), Math.min(...lons)],
+                        [Math.max(...lats), Math.max(...lons)]
+                    );
+                    map.fitBounds(bounds, { padding: [20, 20] });
+                }
+            }
+        }
+
+        function updateCounts() {
+            const total = observations.length;
+            const wifi = observations.filter(o => o.radio === 'wifi').length;
+            const ble = observations.filter(o => o.radio === 'ble').length;
+            
+            document.getElementById('obs-count').textContent = total;
+            document.getElementById('wifi-count').textContent = wifi;
+            document.getElementById('ble-count').textContent = ble;
+        }
+
+        // Event listeners for controls
+        document.getElementById('show-wifi').addEventListener('change', updateMap);
+        document.getElementById('show-ble').addEventListener('change', updateMap);
+        document.getElementById('show-heatmap').addEventListener('change', updateMap);
+        document.getElementById('show-points').addEventListener('change', updateMap);
+
+        // Load existing observations
+        fetch('/observations?limit=500')
+            .then(response => response.json())
+            .then(data => {
+                observations = data;
+                updateMap();
+                updateCounts();
+                updateStatus(`Loaded ${data.length} existing observations`, 'green');
+            })
+            .catch(error => {
+                console.error('Error loading existing observations:', error);
+                updateStatus('Error loading existing data', 'red');
+            });
+
+        // Location functionality
+        let currentLocation = null;
+
+        function getCurrentLocation() {
+            const button = document.getElementById('get-location');
+            button.textContent = '🔄 Getting location...';
+            button.disabled = true;
+
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    function(position) {
+                        const lat = position.coords.latitude;
+                        const lon = position.coords.longitude;
+                        const accuracy = position.coords.accuracy;
+                        
+                        setLocation(lat, lon, accuracy);
+                        button.textContent = '📍 Use My Location';
+                        button.disabled = false;
+                    },
+                    function(error) {
+                        let errorMsg = 'Location access denied';
+                        switch(error.code) {
+                            case error.PERMISSION_DENIED:
+                                errorMsg = 'Location access denied by user';
+                                break;
+                            case error.POSITION_UNAVAILABLE:
+                                errorMsg = 'Location information unavailable';
+                                break;
+                            case error.TIMEOUT:
+                                errorMsg = 'Location request timed out';
+                                break;
+                        }
+                        updateStatus(errorMsg, 'orange');
+                        button.textContent = '📍 Use My Location';
+                        button.disabled = false;
+                    },
+                    {
+                        enableHighAccuracy: true,
+                        timeout: 10000,
+                        maximumAge: 60000
+                    }
+                );
+            } else {
+                updateStatus('Geolocation not supported by browser', 'red');
+                button.textContent = '📍 Use My Location';
+                button.disabled = false;
+            }
+        }
+
+        function setManualLocation() {
+            const lat = parseFloat(document.getElementById('lat-input').value);
+            const lon = parseFloat(document.getElementById('lon-input').value);
+            
+            if (isNaN(lat) || isNaN(lon)) {
+                updateStatus('Please enter valid latitude and longitude', 'orange');
+                return;
+            }
+            
+            if (lat < -90 || lat > 90 || lon < -180 || lon > 180) {
+                updateStatus('Invalid coordinates range', 'orange');
+                return;
+            }
+            
+            setLocation(lat, lon);
+        }
+
+        function setLocation(lat, lon, accuracy = null) {
+            currentLocation = { lat, lon, accuracy };
+            
+            // Update display
+            const locationDiv = document.getElementById('current-location');
+            locationDiv.innerHTML = `
+                Current: ${lat.toFixed(6)}, ${lon.toFixed(6)}
+                ${accuracy ? `<br>Accuracy: ±${Math.round(accuracy)}m` : ''}
+            `;
+            
+            // Update input fields
+            document.getElementById('lat-input').value = lat.toFixed(6);
+            document.getElementById('lon-input').value = lon.toFixed(6);
+            
+            // Center map on location
+            map.setView([lat, lon], 15);
+            
+            // Add/update location marker
+            if (window.locationMarker) {
+                map.removeLayer(window.locationMarker);
+            }
+            
+            window.locationMarker = L.marker([lat, lon], {
+                icon: L.divIcon({
+                    className: 'location-marker',
+                    html: '📍',
+                    iconSize: [20, 20],
+                    iconAnchor: [10, 10]
+                })
+            }).addTo(map);
+            
+            window.locationMarker.bindPopup(`
+                <strong>Your Location</strong><br>
+                ${lat.toFixed(6)}, ${lon.toFixed(6)}
+                ${accuracy ? `<br>Accuracy: ±${Math.round(accuracy)}m` : ''}
+            `);
+            
+            updateStatus(`Location set: ${lat.toFixed(4)}, ${lon.toFixed(4)}`, 'green');
+        }
+
+        // Allow clicking on map to set location
+        map.on('click', function(e) {
+            const lat = e.latlng.lat;
+            const lon = e.latlng.lng;
+            setLocation(lat, lon);
+        });
+
+        // Connect to WebSocket
+        connectWebSocket();
+    </script>
+</body>
+</html>

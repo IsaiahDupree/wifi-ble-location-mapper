@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi & Bluetooth Detection System</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-start {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .btn-stop {
+            background: #f44336;
+            color: white;
+        }
+
+        .btn-export {
+            background: #2196F3;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .status-bar {
+            background: rgba(255,255,255,0.95);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .status-item {
+            text-align: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .status-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .status-label {
+            font-size: 0.9rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .device-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .device-item {
+            padding: 12px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+            transition: all 0.3s ease;
+        }
+
+        .device-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .device-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .device-details {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .signal-strength {
+            float: right;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        .signal-excellent { background: #4CAF50; }
+        .signal-good { background: #8BC34A; }
+        .signal-fair { background: #FF9800; }
+        .signal-poor { background: #f44336; }
+
+        .map-container {
+            grid-column: 1 / -1;
+            height: 500px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .messages {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            max-width: 400px;
+        }
+
+        .message {
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 500;
+            animation: slideIn 0.3s ease;
+        }
+
+        .message.success { background: #4CAF50; }
+        .message.error { background: #f44336; }
+        .message.warning { background: #FF9800; }
+        .message.info { background: #2196F3; }
+
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .controls {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .status-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌐 WiFi & Bluetooth Detection System</h1>
+            <p>Real-time Communication Signal Mapping & Location Tracking</p>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-start" id="startBtn">🚀 Start Detection</button>
+            <button class="btn btn-stop" id="stopBtn" disabled>🛑 Stop Detection</button>
+            <button class="btn btn-export" id="exportBtn">💾 Export Data</button>
+        </div>
+
+        <div class="status-bar">
+            <div class="status-grid">
+                <div class="status-item">
+                    <div class="status-value" id="wifiCount">0</div>
+                    <div class="status-label">WiFi Networks</div>
+                </div>
+                <div class="status-item">
+                    <div class="status-value" id="bluetoothCount">0</div>
+                    <div class="status-label">Bluetooth Devices</div>
+                </div>
+                <div class="status-item">
+                    <div class="status-value" id="signalReadings">0</div>
+                    <div class="status-label">Signal Readings</div>
+                </div>
+                <div class="status-item">
+                    <div class="status-value" id="systemStatus">Stopped</div>
+                    <div class="status-label">System Status</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>📶 WiFi Networks</h3>
+                <div class="device-list" id="wifiList">
+                    <div style="text-align: center; color: #666; padding: 20px;">
+                        No WiFi networks detected yet
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🔵 Bluetooth Devices</h3>
+                <div class="device-list" id="bluetoothList">
+                    <div style="text-align: center; color: #666; padding: 20px;">
+                        No Bluetooth devices detected yet
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📍 Current Location</h3>
+                <div id="locationInfo">
+                    <div style="text-align: center; color: #666; padding: 20px;">
+                        Location tracking not started
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📊 Signal Heatmap</h3>
+                <div id="heatmapContainer" style="height: 300px;">
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #666;">
+                        Heatmap will appear here when data is available
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="messages" id="messages"></div>
+
+    <script>
+        const socket = io();
+        let systemRunning = false;
+
+        // DOM elements
+        const startBtn = document.getElementById('startBtn');
+        const stopBtn = document.getElementById('stopBtn');
+        const exportBtn = document.getElementById('exportBtn');
+        const wifiCount = document.getElementById('wifiCount');
+        const bluetoothCount = document.getElementById('bluetoothCount');
+        const signalReadings = document.getElementById('signalReadings');
+        const systemStatus = document.getElementById('systemStatus');
+        const wifiList = document.getElementById('wifiList');
+        const bluetoothList = document.getElementById('bluetoothList');
+        const locationInfo = document.getElementById('locationInfo');
+        const messages = document.getElementById('messages');
+
+        // Event listeners
+        startBtn.addEventListener('click', () => {
+            socket.emit('start_system');
+            startBtn.disabled = true;
+            startBtn.innerHTML = '<span class="loading"></span> Starting...';
+        });
+
+        stopBtn.addEventListener('click', () => {
+            socket.emit('stop_system');
+            stopBtn.disabled = true;
+            stopBtn.innerHTML = '<span class="loading"></span> Stopping...';
+        });
+
+        exportBtn.addEventListener('click', () => {
+            socket.emit('export_data');
+            exportBtn.disabled = true;
+            exportBtn.innerHTML = '<span class="loading"></span> Exporting...';
+            setTimeout(() => {
+                exportBtn.disabled = false;
+                exportBtn.innerHTML = '💾 Export Data';
+            }, 3000);
+        });
+
+        // Socket event handlers
+        socket.on('system_message', (data) => {
+            showMessage(data.type, data.message);
+            
+            if (data.message.includes('started')) {
+                systemRunning = true;
+                updateControlButtons();
+            } else if (data.message.includes('stopped')) {
+                systemRunning = false;
+                updateControlButtons();
+            }
+        });
+
+        socket.on('data_update', (data) => {
+            if (data.type === 'wifi') {
+                updateWiFiList(data.data);
+            } else if (data.type === 'bluetooth') {
+                updateBluetoothList(data.data);
+            } else if (data.type === 'location') {
+                updateLocationInfo(data.data);
+            }
+            
+            updateStatus();
+        });
+
+        // Update functions
+        function updateControlButtons() {
+            if (systemRunning) {
+                startBtn.disabled = true;
+                startBtn.innerHTML = '🚀 Start Detection';
+                stopBtn.disabled = false;
+                stopBtn.innerHTML = '🛑 Stop Detection';
+                systemStatus.textContent = 'Running';
+                systemStatus.style.color = '#4CAF50';
+            } else {
+                startBtn.disabled = false;
+                startBtn.innerHTML = '🚀 Start Detection';
+                stopBtn.disabled = true;
+                stopBtn.innerHTML = '🛑 Stop Detection';
+                systemStatus.textContent = 'Stopped';
+                systemStatus.style.color = '#f44336';
+            }
+        }
+
+        function updateWiFiList(networks) {
+            if (!networks || networks.length === 0) {
+                wifiList.innerHTML = '<div style="text-align: center; color: #666; padding: 20px;">No WiFi networks detected</div>';
+                return;
+            }
+
+            const html = networks.map(network => {
+                const signalClass = getSignalClass(network.signal_strength);
+                return `
+                    <div class="device-item">
+                        <div class="device-name">${network.ssid || 'Hidden Network'}</div>
+                        <div class="device-details">
+                            BSSID: ${network.bssid}<br>
+                            Encryption: ${network.encryption || 'Unknown'}
+                            <span class="signal-strength ${signalClass}">${network.signal_strength} dBm</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            wifiList.innerHTML = html;
+            wifiCount.textContent = networks.length;
+        }
+
+        function updateBluetoothList(devices) {
+            if (!devices || devices.length === 0) {
+                bluetoothList.innerHTML = '<div style="text-align: center; color: #666; padding: 20px;">No Bluetooth devices detected</div>';
+                return;
+            }
+
+            const html = devices.map(device => {
+                const rssi = device.rssi || -100;
+                const signalClass = getSignalClass(rssi);
+                return `
+                    <div class="device-item">
+                        <div class="device-name">${device.name || 'Unknown Device'}</div>
+                        <div class="device-details">
+                            Address: ${device.address}<br>
+                            Type: ${device.type || 'Unknown'}
+                            <span class="signal-strength ${signalClass}">${rssi} dBm</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            bluetoothList.innerHTML = html;
+            bluetoothCount.textContent = devices.length;
+        }
+
+        function updateLocationInfo(location) {
+            if (!location) {
+                locationInfo.innerHTML = '<div style="text-align: center; color: #666; padding: 20px;">Location not available</div>';
+                return;
+            }
+
+            const html = `
+                <div style="padding: 15px;">
+                    <div style="margin-bottom: 10px;">
+                        <strong>Coordinates:</strong><br>
+                        ${location.latitude?.toFixed(6) || 'N/A'}, ${location.longitude?.toFixed(6) || 'N/A'}
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <strong>Source:</strong> ${location.source || 'Unknown'}
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <strong>Accuracy:</strong> ${location.accuracy?.toFixed(1) || 'N/A'} meters
+                    </div>
+                    ${location.satellites ? `<div><strong>Satellites:</strong> ${location.satellites}</div>` : ''}
+                </div>
+            `;
+
+            locationInfo.innerHTML = html;
+        }
+
+        function getSignalClass(signal) {
+            if (signal > -50) return 'signal-excellent';
+            if (signal > -60) return 'signal-good';
+            if (signal > -70) return 'signal-fair';
+            return 'signal-poor';
+        }
+
+        function updateStatus() {
+            fetch('/api/status')
+                .then(response => response.json())
+                .then(data => {
+                    signalReadings.textContent = data.signal_readings || 0;
+                })
+                .catch(error => console.error('Error fetching status:', error));
+        }
+
+        function showMessage(type, message) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}`;
+            messageDiv.textContent = message;
+            messages.appendChild(messageDiv);
+
+            setTimeout(() => {
+                messageDiv.remove();
+            }, 5000);
+        }
+
+        // Initialize
+        updateControlButtons();
+        setInterval(updateStatus, 5000); // Update status every 5 seconds
+    </script>
+</body>
+</html>

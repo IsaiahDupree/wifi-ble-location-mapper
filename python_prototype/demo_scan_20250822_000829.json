@@ -1,0 +1,95 @@
+{
+  "timestamp": "2025-08-22T00:08:29.838145",
+  "location": {
+    "latitude": 40.7128,
+    "longitude": -74.006,
+    "source": "GPS",
+    "accuracy": 5.0,
+    "timestamp": "2025-08-22T00:08:29.773048"
+  },
+  "networks": [
+    {
+      "ssid": "Starbucks",
+      "signal_strength": -45,
+      "encryption": "Open",
+      "bssid": "aa:bb:cc:dd:ee:01"
+    },
+    {
+      "ssid": "MySpectrumWiFi",
+      "signal_strength": -52,
+      "encryption": "WPA/WPA2",
+      "bssid": "aa:bb:cc:dd:ee:02"
+    },
+    {
+      "ssid": "ATT8ePb7xg",
+      "signal_strength": -58,
+      "encryption": "WPA/WPA2",
+      "bssid": "aa:bb:cc:dd:ee:03"
+    },
+    {
+      "ssid": "Panera",
+      "signal_strength": -61,
+      "encryption": "Open",
+      "bssid": "aa:bb:cc:dd:ee:04"
+    },
+    {
+      "ssid": "Foxtail Coffee Co",
+      "signal_strength": -65,
+      "encryption": "Open",
+      "bssid": "aa:bb:cc:dd:ee:05"
+    },
+    {
+      "ssid": "ARRIS-B1CD",
+      "signal_strength": -68,
+      "encryption": "WPA/WPA2",
+      "bssid": "aa:bb:cc:dd:ee:06"
+    },
+    {
+      "ssid": "Lineage Coffee",
+      "signal_strength": -72,
+      "encryption": "Open",
+      "bssid": "aa:bb:cc:dd:ee:07"
+    },
+    {
+      "ssid": "Quality Inn",
+      "signal_strength": -75,
+      "encryption": "Open",
+      "bssid": "aa:bb:cc:dd:ee:08"
+    },
+    {
+      "ssid": "Hilton Honors",
+      "signal_strength": -78,
+      "encryption": "Open",
+      "bssid": "aa:bb:cc:dd:ee:09"
+    },
+    {
+      "ssid": "Whole Foods Market",
+      "signal_strength": -82,
+      "encryption": "Open",
+      "bssid": "aa:bb:cc:dd:ee:10"
+    },
+    {
+      "ssid": "Disney-Guest",
+      "signal_strength": -85,
+      "encryption": "Open",
+      "bssid": "aa:bb:cc:dd:ee:11"
+    },
+    {
+      "ssid": "Meanmug Coffee",
+      "signal_strength": -88,
+      "encryption": "WPA/WPA2",
+      "bssid": "aa:bb:cc:dd:ee:12"
+    }
+  ],
+  "statistics": {
+    "total_networks": 12,
+    "open_networks": 8,
+    "secured_networks": 4,
+    "signal_distribution": {
+      "excellent": 1,
+      "good": 5,
+      "fair": 3,
+      "poor": 3
+    }
+  }
+}
